@@ -4,53 +4,78 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Soy Leyenda</title>
-<link rel="stylesheet" href="styles.css?v=9">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=10">
 </head>
 <body>
 <div class="w">
   <div id="st">
-    <h1>⚽ Soy Leyenda</h1>
-    <p class="s">Elegí nombre, posición y ritmo de decisiones. De los 16 años al retiro.</p>
-    <input id="nm" placeholder="Nombre del jugador" maxlength="24" aria-label="Nombre del jugador">
-    <select id="fq" aria-label="Frecuencia de decisiones">
-      <option value="1">Elegir todas las temporadas</option>
-      <option value="2">Elegir cada 2 temporadas</option>
-    </select>
-    <select id="sp" aria-label="Velocidad de simulación">
-      <option value="320">Velocidad normal</option>
-      <option value="120">Velocidad rápida</option>
-      <option value="0">Instantánea</option>
-    </select>
-    <select id="md" aria-label="Modo de juego">
-      <option value="0">Modo libre</option>
-      <option value="1">Desafío de club</option>
-    </select>
-    <select id="ch" aria-label="Desafío" hidden></select>
-    <select id="ag" aria-label="Representante">
-      <option value="0">Representante: El Amigo</option>
-      <option value="1">Representante: El Mercenario</option>
-      <option value="2">Representante: El Influyente</option>
-    </select>
-    <select id="nat" aria-label="Nacionalidad"></select>
-    <select id="mt" aria-label="Meta de carrera">
-      <option value="0">Sin meta</option>
-      <option value="1">Meta: ganar la Libertadores</option>
-      <option value="2">Meta: ganar la Champions League</option>
-      <option value="3">Meta: ganar un Mundial</option>
-      <option value="4">Meta: llegar a 85 de OVR</option>
-      <option value="5">Meta: retirarte en el club que te formó</option>
-      <option value="6">Meta: jugar 500 partidos</option>
-    </select>
-    <input id="sd" placeholder="Código de semilla (opcional, para comparar con amigos)" maxlength="12" aria-label="Código de semilla">
-    <select id="th" aria-label="Tema">
-      <option value="">Tema: automático</option>
-      <option value="light">Tema: claro</option>
-      <option value="dark">Tema: oscuro</option>
-    </select>
+    <div class="home-hero">
+      <div class="hero-copy">
+        <span class="eyebrow">MODO CARRERA · 2026</span>
+        <h1>⚽ Soy Leyenda</h1>
+        <p class="s">Elegí nombre, posición y ritmo de decisiones. De los 16 años al retiro.</p>
+      </div>
+      <div class="player-card" id="preview" aria-live="polite">
+        <div class="pc-top"><span class="pc-brand">SOY LEYENDA</span><span class="pc-ov" id="pvOv">--</span></div>
+        <div class="pc-body">
+          <div class="pc-crest" id="pvCrest">SL</div>
+          <div class="pc-id"><b id="pvName">Tu jugador</b><span id="pvPos">🔥 Delantero</span></div>
+        </div>
+        <div class="pc-foot"><span id="pvNat">Argentina</span><span>16 · Sin club</span></div>
+      </div>
+    </div>
+
+    <div class="setup">
+      <input id="nm" placeholder="Nombre del jugador" maxlength="24" aria-label="Nombre del jugador">
+      <select id="fq" aria-label="Frecuencia de decisiones">
+        <option value="1">Elegir todas las temporadas</option>
+        <option value="2">Elegir cada 2 temporadas</option>
+      </select>
+      <select id="sp" aria-label="Velocidad de simulación">
+        <option value="320">Velocidad normal</option>
+        <option value="120">Velocidad rápida</option>
+        <option value="0">Instantánea</option>
+      </select>
+      <select id="md" aria-label="Modo de juego">
+        <option value="0">Modo libre</option>
+        <option value="1">Desafío de club</option>
+      </select>
+      <select id="ch" aria-label="Desafío" hidden></select>
+      <select id="ag" aria-label="Representante">
+        <option value="0">Representante: El Amigo</option>
+        <option value="1">Representante: El Mercenario</option>
+        <option value="2">Representante: El Influyente</option>
+      </select>
+      <select id="nat" aria-label="Nacionalidad"></select>
+      <select id="mt" aria-label="Meta de carrera">
+        <option value="0">Sin meta</option>
+        <option value="1">Meta: ganar la Libertadores</option>
+        <option value="2">Meta: ganar la Champions League</option>
+        <option value="3">Meta: ganar un Mundial</option>
+        <option value="4">Meta: llegar a 85 de OVR</option>
+        <option value="5">Meta: retirarte en el club que te formó</option>
+        <option value="6">Meta: jugar 500 partidos</option>
+      </select>
+      <input id="sd" placeholder="Código de semilla (opcional)" maxlength="12" aria-label="Código de semilla">
+      <select id="th" aria-label="Tema">
+        <option value="">Tema: automático</option>
+        <option value="light">Tema: claro</option>
+        <option value="dark">Tema: oscuro</option>
+      </select>
+    </div>
+
+    <div class="pitch-box">
+      <div class="pitch-head"><span>FORMACIÓN INICIAL</span><small>Tocá una posición</small></div>
+      <div class="pitch" id="ps" role="group" aria-label="Posición inicial"></div>
+    </div>
+
+    <button class="pr start" id="startBtn" type="button">⚽ EMPEZAR CARRERA</button>
     <p class="s" id="hs"></p>
     <button class="pr" id="runBtn" type="button" hidden>▶️ Continuar carrera</button>
-    <div class="g ps" id="ps"></div>
-    <button class="pr" id="hfBtn" type="button" style="background:var(--card);color:var(--tx);border:1px solid var(--bd)">🏆 Salón de la Fama</button>
+    <button class="pr ghost" id="hfBtn" type="button">🏆 Salón de la Fama</button>
   </div>
 
   <div id="pl" hidden>
@@ -123,8 +148,8 @@
   </div>
 </div>
 <div id="cf" aria-hidden="true"></div>
-<script src="leagues.js?v=9"></script>
-<script src="data.js?v=9"></script>
-<script src="game.js?v=9"></script>
+<script src="leagues.js?v=10"></script>
+<script src="data.js?v=10"></script>
+<script src="game.js?v=10"></script>
 </body>
 </html>

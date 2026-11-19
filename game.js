@@ -144,7 +144,7 @@ function relBar(vid,bid,v){
   $(vid).textContent=Math.round(v);
   const b=$(bid);
   b.style.width=Math.max(2,Math.min(100,v))+"%";
-  b.style.background=v>=70?"#22c55e":v>=40?"#eab308":"#ef4444";
+  b.style.background=v>=70?"linear-gradient(90deg,#16a34a,#4ade80)":v>=40?"linear-gradient(90deg,#d97706,#facc15)":"linear-gradient(90deg,#dc2626,#f87171)";
 }
 
 function show(id){["st","pl","en","hf"].forEach(x=>$("#"+x).hidden=x!==id)}
@@ -348,7 +348,7 @@ function head(){
   $("#cyears").textContent=S.free?"Sin club":S.ctr?(S.ctr.y+(S.ctr.y===1?" año":" años")):"—";
   $("#cclause").textContent=S.free?"—":S.ctr?("€"+S.ctr.cl+"M"):"—";
   $("#ctrBox").classList.toggle("free",!!S.free);
-  $("#ob").style.background=oc(S.ovr);
+  $("#ob").dataset.lvl=S.ovr>=85?"leyenda":S.ovr>=80?"elite":S.ovr>=72?"pro":S.ovr>=64?"bueno":"base";
   saveRun();
 }
 
@@ -905,13 +905,32 @@ function renderHf(){
 }
 
 /* ===== INICIALIZACIÓN ===== */
+let selPos=8;
+function selectPos(i){
+  selPos=i;
+  $("#ps").querySelectorAll("button.pos").forEach((b,j)=>b.setAttribute("aria-pressed",j===i?"true":"false"));
+  updPreview();
+}
+function updPreview(){
+  const p=POS[selPos]||POS[8],nm=($("#nm").value||"").trim()||"Tu jugador",nt=NT[+$("#nat").value||0]||NT[0];
+  const parts=String(nt.n||"AR").trim().split(/\s+/);
+  const ini=(parts.length>1?parts.slice(0,2).map(w=>w[0]).join(""):String(nt.n||"AR").slice(0,2)).toUpperCase();
+  $("#pvName").textContent=nm;
+  $("#pvPos").textContent=p[3]+" "+p[0];
+  $("#pvNat").textContent=nt.n;
+  $("#pvCrest").textContent=ini;
+}
 POS.forEach((p,i)=>{
   const b=document.createElement("button");
-  b.type="button";
-  b.innerHTML="<i>"+p[3]+"</i>"+p[0];
-  b.onclick=()=>go(i);
+  b.type="button";b.className="pos pos-"+i;b.dataset.pos=i;
+  b.setAttribute("aria-pressed",i===selPos?"true":"false");
+  b.innerHTML="<i>"+p[3]+"</i><span>"+p[0]+"</span>";
+  b.onclick=()=>selectPos(i);
   $("#ps").appendChild(b);
 });
+$("#startBtn").onclick=()=>go(selPos);
+$("#nm").addEventListener("input",updPreview);
+$("#nat").addEventListener("change",updPreview);
 $("#nat").innerHTML="";
 const seenNat=new Set();
 NT.forEach((n,i)=>{
@@ -922,6 +941,7 @@ NT.forEach((n,i)=>{
   o.textContent=n.n;
   $("#nat").appendChild(o);
 });
+updPreview();
 CH.forEach((c,i)=>{
   const o=document.createElement("option");
   o.value=i;

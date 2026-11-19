@@ -397,7 +397,7 @@ Argentina, Brasil, Uruguay, España, Francia, Inglaterra, Alemania, Italia, Port
 - **Alcance**: `reach` sube a 0.65 para 79+, así un jugador de un club chico puede recibir a los gigantes.
 - **Exterior**: más probabilidad para 79+ (+18 %) y 85+ (+10 %).
 - **78 o menos**: sigue limitado a un tier de salto; recibe clubes grandes de tier 3 pero no la élite.
-- **Cache**: `index.html` carga `styles.css`, `leagues.js`, `data.js` y `game.js` con `?v=9` para evitar que el navegador use versiones viejas.
+- **Cache**: `index.html` carga `styles.css`, `leagues.js`, `data.js` y `game.js` con `?v=10` para evitar que el navegador use versiones viejas.
 
 ## Fase 7 aplicada — Rasgos nuevos
 
@@ -406,6 +406,16 @@ Argentina, Brasil, Uruguay, España, Francia, Inglaterra, Alemania, Italia, Port
 - **Resiliente**: `S.rs=1`; en `season()` saca la lesión más grave del pool (máximo 5 meses), reduce a la mitad la caída de OVR y suma `.2` al factor de partidos jugados.
 - **Helper `trIs(n)`**: reemplaza las comparaciones directas con `S.tr[0]`, usadas por `Líder` y los rasgos nuevos.
 - **Compatibilidad**: `continueRun()` inicializa `gf=1`, `af=1` y `rs=0` en partidas guardadas antes de este cambio.
+
+## Fase 8 aplicada — Interfaz más llamativa
+
+- **Tipografía**: `Barlow Condensed` para títulos, OVR, números y botones principales; `Outfit` para texto. Fuentes de Google con fallback del sistema.
+- **Fondo y cristal**: `body::before` combina luces radiales con franjas de césped; `#st` usa `backdrop-filter: blur(16px)` y panel translúcido.
+- **Badge de OVR**: `head()` ya no pone un color plano con `oc()`; setea `#ob.dataset.lvl` (`base`, `bueno`, `pro`, `elite`, `leyenda`) y CSS aplica gradientes metálicos y glow.
+- **Barras de relación**: `relBar()` usa gradientes verde/ámbar/rojo en vez de colores lisos.
+- **Home (Fase B)**: tarjeta de jugador en vivo (`#preview`) con nombre, posición, nacionalidad e iniciales; selector táctico con 9 botones posicionados sobre una cancha CSS (`#ps .pos-0` … `.pos-8`).
+- **Flujo de inicio**: tocar una posición la marca con `aria-pressed` y actualiza la vista previa; `#startBtn` llama a `go(selPos)`. Antes cada posición iniciaba la partida directamente.
+- **Compatibilidad**: `Mi Carrera.html` sigue intacto; los selectores y eventos del juego (`#nm`, `#nat`, `#md`, etc.) mantienen sus IDs.
 
 ## Identidad
 
