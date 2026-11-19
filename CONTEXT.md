@@ -397,7 +397,7 @@ Argentina, Brasil, Uruguay, España, Francia, Inglaterra, Alemania, Italia, Port
 - **Alcance**: `reach` sube a 0.65 para 79+, así un jugador de un club chico puede recibir a los gigantes.
 - **Exterior**: más probabilidad para 79+ (+18 %) y 85+ (+10 %).
 - **78 o menos**: sigue limitado a un tier de salto; recibe clubes grandes de tier 3 pero no la élite.
-- **Cache**: `index.html` carga `styles.css`, `leagues.js`, `data.js` y `game.js` con `?v=16` para evitar que el navegador use versiones viejas.
+- **Cache**: `index.html` carga `styles.css`, `leagues.js`, `data.js` y `game.js` con `?v=17` para evitar que el navegador use versiones viejas.
 
 ## Fase 7 aplicada — Rasgos nuevos
 
@@ -416,6 +416,15 @@ Argentina, Brasil, Uruguay, España, Francia, Inglaterra, Alemania, Italia, Port
 - **Home (Fase B)**: tarjeta de jugador en vivo (`#preview`) con nombre, posición, nacionalidad e iniciales; selector táctico con 11 botones posicionados sobre una cancha CSS (`#ps .pos-0` … `.pos-10`).
 - **Flujo de inicio**: tocar una posición la marca con `aria-pressed` y actualiza la vista previa; `#startBtn` llama a `go(selPos)`. Antes cada posición iniciaba la partida directamente.
 - **Compatibilidad**: `Mi Carrera.html` sigue intacto; los selectores y eventos del juego (`#nm`, `#nat`, `#md`, etc.) mantienen sus IDs.
+
+## Fase 12 aplicada — Más goles y OVR ligado al rendimiento
+
+- **Diagnóstico**: antes los goles no afectaban al OVR (`season()` sólo sumaba `gr(edad) + pre.gr + S.gb + R(-1.6,1.6)` con tope `pot+2`), y la curva de edad dejaba el OVR estancado en ~78. Con potencia media (81), 0 % de las temporadas alcanzaban 85.
+- **Referencia real** (Premier League 2023–24, Wikipedia): 1.246 goles en 380 partidos (3,28 por partido); Haaland 27, Palmer 22, Isak 21, Foden/Solanke/Watkins 19, Salah 18, Son 17, Bowen/Mateta/Saka 16. Un extremo élite ronda 16–18 G por temporada (0,42–0,47 por partido).
+- **Tasas ajustadas**: extremos `.24 → .34` y delantero `.48 → .56`. Con el factor de nivel `off`, un extremo de 27 años pasa de ~10 G a ~15 G por temporada (0,43 por partido) y el delantero de ~20 a ~25 G (0,72 por partido).
+- **Curva extendida**: `gr` pasa a `3.5 / 2.8 / 2 / 1 / -.4 / -2` por franja de edad y el techo sube de `pot+2` a `pot+4`.
+- **Bonus por rendimiento**: al cerrar la temporada se suma `clamp((g-10)/40, -.3, .6)` al OVR (≈ +0,25 con 20 goles, +0,5 con 30), con actualización de `S.peak` y `S.pv` y el hito «OVR 85» también después del bonus. Ahora meter goles sí acelera el crecimiento.
+- Simulación con 5.000 carreras: OVR 80–82 a los 27 años, 83 a los 30, y 11–17 % de temporadas en OVR ≥85 (antes 0–3 %).
 
 ## Fase 11 aplicada — Cancha de 11 jugadores según referencia
 
@@ -454,7 +463,7 @@ Argentina, Brasil, Uruguay, España, Francia, Inglaterra, Alemania, Italia, Port
 
 - Tasas definitivas por partido en `POS` (`[nombre, goles, asistencias, icono]`), basadas en referencias reales (StatMuse: Bruno Fernandes ~0,50 asistencias/partido en 2019-20; Lampard 36 G+A en 2009-10; Wikipedia 2023-24 Premier League para contexto de titulares):
   - Central `.03 / .02`, laterales `.02 / .10`, Pivote `.05 / .16`.
-  - **Mediocampista `.16 / .30`** (~8-10 G y 12-16 A por temporada), **Enganche `.28 / .45`** (~15-20 G y 20-28 A), Extremo izquierdo `.24 / .22`, Extremo derecho `.24 / .22`, Delantero `.48 / .14`.
+  - **Mediocampista `.16 / .30`** (~8-10 G y 12-16 A por temporada), **Enganche `.28 / .45`** (~15-20 G y 20-28 A), Extremo izquierdo `.34 / .22`, Extremo derecho `.34 / .22`, Delantero `.56 / .14`.
 - `season()` aplica además un factor de nivel `off = clamp(.75 + (OVR-60)/45, .7, 1.7)` a goles y asistencias, tanto de club como de selección. El escalado a partir de OVR 80 es más fuerte: un mediocampista de 88+ ya no tiene números de defensor.
 - Referencia previa con OVR 88–94 y ~830 PJ: lateral 76 asistencias/600, mediocampista 192/600, enganche 312/600 (antes el mediocampista estaba en ~65/600). Con el nuevo escalado el mediocampista sube a ~265/600 y el enganche a ~400/600.
 - `continueRun()` migra partidas guardadas: si `S.p` es un array viejo, se reemplaza por el objeto de `POS` correspondiente para que usen las tasas nuevas.

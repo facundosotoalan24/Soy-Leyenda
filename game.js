@@ -432,9 +432,9 @@ function continentalSlot(pos,conf){
 }
 
 function season(){
-  const a=S.age,gr=a<21?3.5:a<24?2.5:a<27?1.2:a<30?.2:a<33?-.8:-2.2,pre=S.pre||{};
+  const a=S.age,gr=a<21?3.5:a<24?2.8:a<27?2:a<30?1:a<33?-.4:-2,pre=S.pre||{};
   if(S.pj===0)mile("🌱","Debut");
-  S.ovr=Math.round(C(S.ovr+gr+(pre.gr||0)+S.gb+R(-1.6,1.6),35,Math.min(94,S.pot+2)));
+  S.ovr=Math.round(C(S.ovr+gr+(pre.gr||0)+S.gb+R(-1.6,1.6),35,Math.min(94,S.pot+4)));
   S.peak=Math.max(S.peak,S.ovr);
   S.pv=Math.max(S.pv,val());
   if(S.rel.hin>75)S.mod=(S.mod||0)+.05;
@@ -452,6 +452,10 @@ function season(){
   // El nivel también pesa: un enganche elite genera muchas más ocasiones que uno de plantel.
   const off=C(.75+(S.ovr-60)/45,.7,1.7);
   const g=Math.round(pj*S.p[1]*R(.6,1.5)*(pre.g||1)*(S.gf||1)*off),as=Math.round(pj*S.p[2]*R(.6,1.5)*(pre.a||1)*(S.af||1)*off);
+  // El rendimiento también cuenta: marcar goles acelera el crecimiento y no marcarlo lo frena.
+  S.ovr=Math.round(C(S.ovr+C((g-10)/40,-.3,.6),35,Math.min(94,S.pot+4)));
+  S.peak=Math.max(S.peak,S.ovr);S.pv=Math.max(S.pv,val());
+  if(S.ovr>=85)mile("⭐","OVR 85");
   const gkm=S.p[0]=="Arquero",rel=S.ovr-Math.max(ex,45),gkF=pre.gk||1;
   let pen=0,mm=0,vc=0;
   if(gkm){
