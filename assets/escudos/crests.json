@@ -1,0 +1,3408 @@
+[
+  {
+    "lgId": "ARA",
+    "club": "Abha",
+    "div": 2,
+    "file": "ara-abha.png",
+    "source": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/abha.e9f77104.png",
+    "sourceName": "Abha"
+  },
+  {
+    "lgId": "ARA",
+    "club": "Al-Adalah",
+    "div": 2,
+    "file": "ara-al-adalah.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/ugjap61737684503.png",
+    "sourceName": "Al-Adalah (TheSportsDB)"
+  },
+  {
+    "lgId": "ARA",
+    "club": "Al-Ahli",
+    "div": 1,
+    "file": "ara-al-ahli.png",
+    "source": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-ahli.4a088ea9.png",
+    "sourceName": "Al Ahli"
+  },
+  {
+    "lgId": "ARA",
+    "club": "Al-Ansar",
+    "div": 2,
+    "file": "ara-al-ansar.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/2/2c/Al-Ansar_FC_logo.png",
+    "sourceName": "Al-Ansar FC (Wikipedia)"
+  },
+  {
+    "lgId": "ARA",
+    "club": "Al-Arabi",
+    "div": 2,
+    "file": "ara-al-arabi.png",
+    "source": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-arabi.8054706a.png",
+    "sourceName": "Al Arabi"
+  },
+  {
+    "lgId": "ARA",
+    "club": "Al-Batin",
+    "div": 2,
+    "file": "ara-al-batin.png",
+    "source": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-batin.feb601d8.png",
+    "sourceName": "Al Batin"
+  },
+  {
+    "lgId": "ARA",
+    "club": "Al-Bukiryah",
+    "div": 2,
+    "file": "ara-al-bukiryah.png",
+    "source": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-bukayriyah.cd397f65.png",
+    "sourceName": "Al Bukayriyah"
+  },
+  {
+    "lgId": "ARA",
+    "club": "Al-Diriyah",
+    "div": 2,
+    "file": "ara-al-diriyah.png",
+    "source": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/diriyah-club.78f22d14.png",
+    "sourceName": "Diriyah Club"
+  },
+  {
+    "lgId": "ARA",
+    "club": "Al-Ettifaq",
+    "div": 1,
+    "file": "ara-al-ettifaq.png",
+    "source": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-ettifaq.012ffc39.png",
+    "sourceName": "Al Ettifaq"
+  },
+  {
+    "lgId": "ARA",
+    "club": "Al-Faisaly",
+    "div": 2,
+    "file": "ara-al-faisaly.png",
+    "source": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-faisaly-fc.43f1e474.png",
+    "sourceName": "Al-Faisaly FC"
+  },
+  {
+    "lgId": "ARA",
+    "club": "Al-Fateh",
+    "div": 1,
+    "file": "ara-al-fateh.png",
+    "source": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-fateh.fe613f47.png",
+    "sourceName": "Al Fateh"
+  },
+  {
+    "lgId": "ARA",
+    "club": "Al-Fayha",
+    "div": 1,
+    "file": "ara-al-fayha.png",
+    "source": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-fayha.53f2bd24.png",
+    "sourceName": "Al Fayha"
+  },
+  {
+    "lgId": "ARA",
+    "club": "Al-Hazem",
+    "div": 1,
+    "file": "ara-al-hazem.png",
+    "source": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-hazem.ab7378f4.png",
+    "sourceName": "Al Hazem"
+  },
+  {
+    "lgId": "ARA",
+    "club": "Al-Hilal",
+    "div": 1,
+    "file": "ara-al-hilal.png",
+    "source": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-hilal.fc7a4d70.png",
+    "sourceName": "Al Hilal"
+  },
+  {
+    "lgId": "ARA",
+    "club": "Al-Ittihad",
+    "div": 1,
+    "file": "ara-al-ittihad.png",
+    "source": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-ittihad.9a2895c9.png",
+    "sourceName": "Al Ittihad"
+  },
+  {
+    "lgId": "ARA",
+    "club": "Al-Jabalain",
+    "div": 2,
+    "file": "ara-al-jabalain.png",
+    "source": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-jabalain.c4e3bddc.png",
+    "sourceName": "Al Jabalain"
+  },
+  {
+    "lgId": "ARA",
+    "club": "Al-Jandal",
+    "div": 2,
+    "file": "ara-al-jandal.png",
+    "source": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-jandal.82ba91ce.png",
+    "sourceName": "Al Jandal"
+  },
+  {
+    "lgId": "ARA",
+    "club": "Al-Jubail",
+    "div": 2,
+    "file": "ara-al-jubail.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/7b4ird1737690523.png",
+    "sourceName": "Al-Jubail (TheSportsDB)"
+  },
+  {
+    "lgId": "ARA",
+    "club": "Al-Khaleej",
+    "div": 1,
+    "file": "ara-al-khaleej.png",
+    "source": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-khaleej.79da44d6.png",
+    "sourceName": "Al Khaleej"
+  },
+  {
+    "lgId": "ARA",
+    "club": "Al-Kholood",
+    "div": 1,
+    "file": "ara-al-kholood.png",
+    "source": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-kholood.fe801b7f.png",
+    "sourceName": "Al-Kholood"
+  },
+  {
+    "lgId": "ARA",
+    "club": "Al-Najma",
+    "div": 1,
+    "file": "ara-al-najma.png",
+    "source": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-najma.eb3af8cf.png",
+    "sourceName": "Al Najma"
+  },
+  {
+    "lgId": "ARA",
+    "club": "Al-Nassr",
+    "div": 1,
+    "file": "ara-al-nassr.png",
+    "source": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-nassr.7e60a8fc.png",
+    "sourceName": "Al Nassr"
+  },
+  {
+    "lgId": "ARA",
+    "club": "Al-Okhdood",
+    "div": 2,
+    "file": "ara-al-okhdood.png",
+    "source": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-okhdood.ee597d67.png",
+    "sourceName": "Al Okhdood"
+  },
+  {
+    "lgId": "ARA",
+    "club": "Al-Orobah",
+    "div": 1,
+    "file": "ara-al-orobah.png",
+    "source": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-orobah.f41f4762.png",
+    "sourceName": "Al Orobah"
+  },
+  {
+    "lgId": "ARA",
+    "club": "Al-Qadsiah",
+    "div": 1,
+    "file": "ara-al-qadsiah.png",
+    "source": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-qadsiah.8c500f16.png",
+    "sourceName": "Al Qadsiah"
+  },
+  {
+    "lgId": "ARA",
+    "club": "Al-Qaisumah",
+    "div": 2,
+    "file": null,
+    "source": null
+  },
+  {
+    "lgId": "ARA",
+    "club": "Al-Raed",
+    "div": 2,
+    "file": "ara-al-raed.png",
+    "source": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-raed.fec6fb4b.png",
+    "sourceName": "Al Raed"
+  },
+  {
+    "lgId": "ARA",
+    "club": "Al-Riyadh",
+    "div": 1,
+    "file": "ara-al-riyadh.png",
+    "source": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-riyadh.3d0f075b.png",
+    "sourceName": "Al Riyadh"
+  },
+  {
+    "lgId": "ARA",
+    "club": "Al-Safa",
+    "div": 2,
+    "file": "ara-al-safa.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/vh48ud1737688877.png",
+    "sourceName": "Al-Safa (TheSportsDB)"
+  },
+  {
+    "lgId": "ARA",
+    "club": "Al-Shabab",
+    "div": 1,
+    "file": "ara-al-shabab.png",
+    "source": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-shabab.c92515de.png",
+    "sourceName": "Al Shabab"
+  },
+  {
+    "lgId": "ARA",
+    "club": "Al-Taawoun",
+    "div": 1,
+    "file": "ara-al-taawoun.png",
+    "source": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-taawoun.ddaee130.png",
+    "sourceName": "Al Taawoun"
+  },
+  {
+    "lgId": "ARA",
+    "club": "Al-Taraji",
+    "div": 2,
+    "file": null,
+    "source": null
+  },
+  {
+    "lgId": "ARA",
+    "club": "Al-Wehda",
+    "div": 2,
+    "file": "ara-al-wehda.png",
+    "source": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-wehda.136e4da4.png",
+    "sourceName": "Al Wehda"
+  },
+  {
+    "lgId": "ARA",
+    "club": "Al-Zulfi",
+    "div": 2,
+    "file": "ara-al-zulfi.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/zg8k731737689709.png",
+    "sourceName": "Al-Zulfi (TheSportsDB)"
+  },
+  {
+    "lgId": "ARA",
+    "club": "Damac",
+    "div": 1,
+    "file": "ara-damac.png",
+    "source": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/damac.4f5ef074.png",
+    "sourceName": "Damac"
+  },
+  {
+    "lgId": "ARA",
+    "club": "Neom",
+    "div": 1,
+    "file": "ara-neom.png",
+    "source": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/neom.a83a3811.png",
+    "sourceName": "Neom SC"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Agropecuario",
+    "div": 2,
+    "file": "arg-agropecuario.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/agropecuario-argentino.53023997.png",
+    "sourceName": "Agropecuario Argentino"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Almirante Brown",
+    "div": 2,
+    "file": "arg-almirante-brown.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/almirante-brown.470abf3d.png",
+    "sourceName": "Almirante Brown"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Alvarado",
+    "div": 2,
+    "file": "arg-alvarado.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/alvarado.37f5f84c.png",
+    "sourceName": "Alvarado"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Argentinos",
+    "div": 1,
+    "file": "arg-argentinos.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/argentinos-juniors.8c05f988.png",
+    "sourceName": "Argentinos Juniors"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Atlanta",
+    "div": 2,
+    "file": "arg-atlanta.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/atletico-atlanta.082f83af.png",
+    "sourceName": "Atlético Atlanta"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Banfield",
+    "div": 1,
+    "file": "arg-banfield.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/banfield.46ca6275.png",
+    "sourceName": "Banfield"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Belgrano",
+    "div": 1,
+    "file": "arg-belgrano.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/belgrano.a9ed5c35.png",
+    "sourceName": "Belgrano"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Boca",
+    "div": 1,
+    "file": "arg-boca.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/boca-juniors.533fd0f6.png",
+    "sourceName": "Boca Juniors"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Brown de Adrogué",
+    "div": 2,
+    "file": "arg-brown-de-adrogue.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/brown-de-adrogue.0b54e6bb.png",
+    "sourceName": "Brown de Adrogué"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Chacarita",
+    "div": 2,
+    "file": "arg-chacarita.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/chacarita-juniors.f00932d4.png",
+    "sourceName": "Chacarita Juniors"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Colegiales",
+    "div": 2,
+    "file": "arg-colegiales.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/colegiales.dd8300ef.png",
+    "sourceName": "Colegiales"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Defensa y Justicia",
+    "div": 1,
+    "file": "arg-defensa-y-justicia.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/defensa-y-justicia.4fab6d36.png",
+    "sourceName": "Defensa y Justicia"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Defensores de Belgrano",
+    "div": 2,
+    "file": "arg-defensores-de-belgrano.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/defensores-de-belgrano.ffbce08e.png",
+    "sourceName": "Defensores de Belgrano"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Deportivo Madryn",
+    "div": 2,
+    "file": "arg-deportivo-madryn.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/deportivo-madryn.2e0b8c0d.png",
+    "sourceName": "Deportivo Madryn"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Deportivo Morón",
+    "div": 2,
+    "file": "arg-deportivo-moron.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/deportivo-moron.3b571401.png",
+    "sourceName": "Deportivo Morón"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Estudiantes",
+    "div": 1,
+    "file": "arg-estudiantes.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/estudiantes-de-la-plata.156c3018.png",
+    "sourceName": "Estudiantes de La Plata"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Estudiantes de Río Cuarto",
+    "div": 2,
+    "file": "arg-estudiantes-de-rio-cuarto.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/estudiantes-de-rio-cuarto.96786cb1.png",
+    "sourceName": "Estudiantes de Rio Cuarto"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Ferro",
+    "div": 2,
+    "file": "arg-ferro.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/ferro-carril-oeste.78bdb92d.png",
+    "sourceName": "Ferro Carril Oeste"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Gimnasia",
+    "div": 1,
+    "file": "arg-gimnasia.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/gimnasia-lp.9ad61caf.png",
+    "sourceName": "Gimnasia LP"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Godoy Cruz",
+    "div": 1,
+    "file": "arg-godoy-cruz.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/godoy-cruz.28da0774.png",
+    "sourceName": "Godoy Cruz"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Güemes",
+    "div": 2,
+    "file": "arg-guemes.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/guemes.63ccd0ef.png",
+    "sourceName": "Güemes"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Huracán",
+    "div": 1,
+    "file": "arg-huracan.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/ca-huracan.c9e27138.png",
+    "sourceName": "CA Huracán"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Independiente",
+    "div": 1,
+    "file": "arg-independiente.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/independiente.b35df14c.png",
+    "sourceName": "Independiente"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Independiente Rivadavia",
+    "div": 1,
+    "file": "arg-independiente-rivadavia.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/independiente-rivadavia.730cd452.png",
+    "sourceName": "Independiente Rivadavia"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Instituto",
+    "div": 1,
+    "file": "arg-instituto.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/instituto-cordoba.9dd5a11e.png",
+    "sourceName": "Instituto Córdoba"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Lanús",
+    "div": 1,
+    "file": "arg-lanus.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/lanus.219a8356.png",
+    "sourceName": "Lanús"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Los Andes",
+    "div": 2,
+    "file": "arg-los-andes.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/los-andes.8a418fbf.png",
+    "sourceName": "Los Andes"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Mitre",
+    "div": 2,
+    "file": "arg-mitre.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/mitre-santiago-del-estero.28ec8acd.png",
+    "sourceName": "Club Atlético Mitre"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Newell's",
+    "div": 1,
+    "file": "arg-newells.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/newells-old-boys.323439bf.png",
+    "sourceName": "Newell's Old Boys"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Nueva Chicago",
+    "div": 2,
+    "file": "arg-nueva-chicago.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/nueva-chicago.58bb4d4a.png",
+    "sourceName": "Nueva Chicago"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Quilmes",
+    "div": 2,
+    "file": "arg-quilmes.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/quilmes.01c3dd47.png",
+    "sourceName": "Quilmes"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Racing",
+    "div": 1,
+    "file": "arg-racing.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/racing-club.2b4a44c9.png",
+    "sourceName": "Racing Club"
+  },
+  {
+    "lgId": "ARG",
+    "club": "River",
+    "div": 1,
+    "file": "arg-river.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/river-plate.44a77530.png",
+    "sourceName": "River Plate"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Rosario Central",
+    "div": 1,
+    "file": "arg-rosario-central.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/rosario-central.793203e2.png",
+    "sourceName": "Rosario Central"
+  },
+  {
+    "lgId": "ARG",
+    "club": "San Lorenzo",
+    "div": 1,
+    "file": "arg-san-lorenzo.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/san-lorenzo-de-almagro.ed28f248.png",
+    "sourceName": "San Lorenzo de Almagro"
+  },
+  {
+    "lgId": "ARG",
+    "club": "San Martín (T)",
+    "div": 2,
+    "file": "arg-san-martin-t.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/san-martin-tucuman.5a83df4f.png",
+    "sourceName": "San Martín"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Talleres",
+    "div": 1,
+    "file": "arg-talleres.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/talleres.9ab2adba.png",
+    "sourceName": "Talleres"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Temperley",
+    "div": 2,
+    "file": "arg-temperley.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/temperley.02e821be.png",
+    "sourceName": "Club Atlético Temperley"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Tristán Suárez",
+    "div": 2,
+    "file": "arg-tristan-suarez.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/tristan-suarez.5efea01f.png",
+    "sourceName": "Tristán Suárez"
+  },
+  {
+    "lgId": "ARG",
+    "club": "Vélez",
+    "div": 1,
+    "file": "arg-velez.png",
+    "source": "https://assets.football-logos.cc/logos/argentina/256x256/velez-sarsfield.d9813ef4.png",
+    "sourceName": "Vélez Sarsfield"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Amazonas",
+    "div": 2,
+    "file": "bra-amazonas.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/amazonas.c47d0b8c.png",
+    "sourceName": "Amazonas"
+  },
+  {
+    "lgId": "BRA",
+    "club": "América-MG",
+    "div": 2,
+    "file": "bra-america-mg.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/america-mineiro.c851fba8.png",
+    "sourceName": "América Mineiro"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Athletic-MG",
+    "div": 2,
+    "file": "bra-athletic-mg.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/athletic.c4c0b466.png",
+    "sourceName": "Athletic"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Athletico-PR",
+    "div": 1,
+    "file": "bra-athletico-pr.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/athletico-paranaense.15469cc7.png",
+    "sourceName": "Athletico Paranaense"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Atlético-GO",
+    "div": 1,
+    "file": "bra-atletico-go.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/atletico-goianiense.4eadd950.png",
+    "sourceName": "Atlético Goianiense"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Atlético-MG",
+    "div": 1,
+    "file": "bra-atletico-mg.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/atletico-mineiro.c5c81922.png",
+    "sourceName": "Atlético Mineiro"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Avaí",
+    "div": 2,
+    "file": "bra-avai.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/avai.cdb69a77.png",
+    "sourceName": "Avai"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Bahia",
+    "div": 1,
+    "file": "bra-bahia.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/bahia.ac6d69f5.png",
+    "sourceName": "Bahia"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Botafogo",
+    "div": 1,
+    "file": "bra-botafogo.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/botafogo.e439f7a4.png",
+    "sourceName": "Botafogo FR"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Botafogo-SP",
+    "div": 2,
+    "file": "bra-botafogo-sp.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/botafogo-sp.50f2da52.png",
+    "sourceName": "Botafogo SP"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Bragantino",
+    "div": 1,
+    "file": "bra-bragantino.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/rb-bragantino.58ea7195.png",
+    "sourceName": "RB Bragantino"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Brusque",
+    "div": 2,
+    "file": "bra-brusque.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/brusque.1c6f9af9.png",
+    "sourceName": "Brusque"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Ceará",
+    "div": 2,
+    "file": "bra-ceara.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/ceara.ea9d0cdd.png",
+    "sourceName": "Ceará"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Chapecoense",
+    "div": 2,
+    "file": "bra-chapecoense.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/chapecoense.7256ba28.png",
+    "sourceName": "Chapecoense"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Corinthians",
+    "div": 1,
+    "file": "bra-corinthians.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/corinthians.c51ae739.png",
+    "sourceName": "Corinthians"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Coritiba",
+    "div": 2,
+    "file": "bra-coritiba.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/coritiba.6d282e13.png",
+    "sourceName": "Coritiba"
+  },
+  {
+    "lgId": "BRA",
+    "club": "CRB",
+    "div": 2,
+    "file": "bra-crb.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/crb.f44e564b.png",
+    "sourceName": "CRB"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Criciúma",
+    "div": 1,
+    "file": "bra-criciuma.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/criciuma.28c1fe06.png",
+    "sourceName": "Criciúma"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Cruzeiro",
+    "div": 1,
+    "file": "bra-cruzeiro.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/cruzeiro.6c188ab8.png",
+    "sourceName": "Cruzeiro"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Cuiabá",
+    "div": 1,
+    "file": "bra-cuiaba.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/cuiaba.2ff467a8.png",
+    "sourceName": "Cuiabá"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Flamengo",
+    "div": 1,
+    "file": "bra-flamengo.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/flamengo.9c3055f2.png",
+    "sourceName": "Flamengo"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Fluminense",
+    "div": 1,
+    "file": "bra-fluminense.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/fluminense.118d8b5e.png",
+    "sourceName": "Fluminense"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Fortaleza",
+    "div": 1,
+    "file": "bra-fortaleza.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/fortaleza.5f34e5ff.png",
+    "sourceName": "Fortaleza"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Goiás",
+    "div": 2,
+    "file": "bra-goias.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/goias.e5a0bc09.png",
+    "sourceName": "Goiás"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Grêmio",
+    "div": 1,
+    "file": "bra-gremio.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/gremio.d252cec9.png",
+    "sourceName": "Grêmio"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Guarani",
+    "div": 2,
+    "file": "bra-guarani.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/guarani.88642ff3.png",
+    "sourceName": "Guarani"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Internacional",
+    "div": 1,
+    "file": "bra-internacional.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/internacional.82f72a2f.png",
+    "sourceName": "Internacional"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Ituano",
+    "div": 2,
+    "file": "bra-ituano.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/ituano.8c844d7e.png",
+    "sourceName": "Ituano"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Juventude",
+    "div": 1,
+    "file": "bra-juventude.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/juventude.fe8abf7c.png",
+    "sourceName": "Juventude"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Mirassol",
+    "div": 2,
+    "file": "bra-mirassol.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/mirassol.dbde4636.png",
+    "sourceName": "Mirassol"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Novorizontino",
+    "div": 2,
+    "file": "bra-novorizontino.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/novorizontino.689cca10.png",
+    "sourceName": "Grêmio Novorizontino"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Operário",
+    "div": 2,
+    "file": "bra-operario.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/operario-ferroviario.9fc8aa8a.png",
+    "sourceName": "Operário Ferroviário"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Palmeiras",
+    "div": 1,
+    "file": "bra-palmeiras.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/palmeiras.9ab1d558.png",
+    "sourceName": "Palmeiras"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Paysandu",
+    "div": 2,
+    "file": "bra-paysandu.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/paysandu.d4c75168.png",
+    "sourceName": "Paysandu"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Ponte Preta",
+    "div": 2,
+    "file": "bra-ponte-preta.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/ponte-preta.211c18b1.png",
+    "sourceName": "Ponte Preta"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Santos",
+    "div": 2,
+    "file": "bra-santos.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/santos.d23b4286.png",
+    "sourceName": "Santos FC"
+  },
+  {
+    "lgId": "BRA",
+    "club": "São Paulo",
+    "div": 1,
+    "file": "bra-sao-paulo.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/sao-paulo.468eaeb3.png",
+    "sourceName": "São Paulo"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Sport",
+    "div": 2,
+    "file": "bra-sport.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/sport-recife.42103cc4.png",
+    "sourceName": "Sport Recife"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Vasco",
+    "div": 1,
+    "file": "bra-vasco.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/vasco-da-gama.74746cfd.png",
+    "sourceName": "Vasco da Gama"
+  },
+  {
+    "lgId": "BRA",
+    "club": "Vitória",
+    "div": 1,
+    "file": "bra-vitoria.png",
+    "source": "https://assets.football-logos.cc/logos/brazil/256x256/vitoria.227522d4.png",
+    "sourceName": "Vitória"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Arsenal",
+    "div": 1,
+    "file": "eng-arsenal.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/arsenal.e5528ede.png",
+    "sourceName": "Arsenal"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Aston Villa",
+    "div": 1,
+    "file": "eng-aston-villa.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/aston-villa.07a2646c.png",
+    "sourceName": "Aston Villa"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Blackburn",
+    "div": 2,
+    "file": "eng-blackburn.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/blackburn-rovers.a6f1e611.png",
+    "sourceName": "Blackburn Rovers"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Bournemouth",
+    "div": 1,
+    "file": "eng-bournemouth.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/bournemouth.1a237aee.png",
+    "sourceName": "Bournemouth"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Brentford",
+    "div": 1,
+    "file": "eng-brentford.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/brentford.e3296e20.png",
+    "sourceName": "Brentford"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Brighton",
+    "div": 1,
+    "file": "eng-brighton.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/brighton.5da206a0.png",
+    "sourceName": "Brighton"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Bristol City",
+    "div": 2,
+    "file": "eng-bristol-city.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/bristol-city.32f1f82d.png",
+    "sourceName": "Bristol City"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Burnley",
+    "div": 2,
+    "file": "eng-burnley.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/burnley.7baea7d7.png",
+    "sourceName": "Burnley"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Cardiff",
+    "div": 2,
+    "file": "eng-cardiff.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/cardiff-city.f164becb.png",
+    "sourceName": "Cardiff City"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Chelsea",
+    "div": 1,
+    "file": "eng-chelsea.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/chelsea.ede8a2a7.png",
+    "sourceName": "Chelsea"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Coventry",
+    "div": 2,
+    "file": "eng-coventry.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/coventry-city.936f87b8.png",
+    "sourceName": "Coventry City"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Crystal Palace",
+    "div": 1,
+    "file": "eng-crystal-palace.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/crystal-palace.53067b96.png",
+    "sourceName": "Crystal Palace"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Derby",
+    "div": 2,
+    "file": "eng-derby.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/derby-county.ba26b540.png",
+    "sourceName": "Derby County"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Everton",
+    "div": 1,
+    "file": "eng-everton.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/everton.6b635cd7.png",
+    "sourceName": "Everton"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Fulham",
+    "div": 1,
+    "file": "eng-fulham.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/fulham.4c7ce48b.png",
+    "sourceName": "Fulham"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Hull",
+    "div": 2,
+    "file": "eng-hull.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/hull-city.28918662.png",
+    "sourceName": "Hull City"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Ipswich",
+    "div": 1,
+    "file": "eng-ipswich.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/ipswich.bb8ea176.png",
+    "sourceName": "Ipswich"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Leeds",
+    "div": 2,
+    "file": "eng-leeds.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/leeds-united.26dba8f5.png",
+    "sourceName": "Leeds United"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Leicester",
+    "div": 1,
+    "file": "eng-leicester.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/leicester.9c13bc7c.png",
+    "sourceName": "Leicester"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Liverpool",
+    "div": 1,
+    "file": "eng-liverpool.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/liverpool.99c48ae3.png",
+    "sourceName": "Liverpool FC"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Luton",
+    "div": 2,
+    "file": "eng-luton.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/luton-town.b918012a.png",
+    "sourceName": "Luton Town"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Man. City",
+    "div": 1,
+    "file": "eng-man-city.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/manchester-city.62f9d1f2.png",
+    "sourceName": "Manchester City"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Man. United",
+    "div": 1,
+    "file": "eng-man-united.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/manchester-united.7ab9d343.png",
+    "sourceName": "Manchester United"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Middlesbrough",
+    "div": 2,
+    "file": "eng-middlesbrough.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/middlesbrough.b9f845aa.png",
+    "sourceName": "Middlesbrough"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Millwall",
+    "div": 2,
+    "file": "eng-millwall.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/millwall.07c9fbfe.png",
+    "sourceName": "Millwall"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Newcastle",
+    "div": 1,
+    "file": "eng-newcastle.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/newcastle.d43c5c6f.png",
+    "sourceName": "Newcastle United"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Norwich",
+    "div": 2,
+    "file": "eng-norwich.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/norwich-city.5cf24a54.png",
+    "sourceName": "Norwich City"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Nottingham Forest",
+    "div": 1,
+    "file": "eng-nottingham-forest.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/nottingham-forest.43b53a26.png",
+    "sourceName": "Nottingham Forest"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Oxford",
+    "div": 2,
+    "file": "eng-oxford.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/oxford-united.881849cd.png",
+    "sourceName": "Oxford United"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Plymouth",
+    "div": 2,
+    "file": "eng-plymouth.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/plymouth-argyle.be2526a7.png",
+    "sourceName": "Plymouth Argyle"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Portsmouth",
+    "div": 2,
+    "file": "eng-portsmouth.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/portsmouth.1007a222.png",
+    "sourceName": "Portsmouth"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Preston",
+    "div": 2,
+    "file": "eng-preston.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/preston-north-end.c8495ff2.png",
+    "sourceName": "Preston North End"
+  },
+  {
+    "lgId": "ENG",
+    "club": "QPR",
+    "div": 2,
+    "file": "eng-qpr.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/queens-park-rangers.520a466e.png",
+    "sourceName": "Queens Park Rangers"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Sheffield United",
+    "div": 2,
+    "file": "eng-sheffield-united.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/sheffield-united.1c8f00ec.png",
+    "sourceName": "Sheffield United"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Sheffield Wednesday",
+    "div": 2,
+    "file": "eng-sheffield-wednesday.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/sheffield-wednesday.41a8f439.png",
+    "sourceName": "Sheffield Wednesday"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Southampton",
+    "div": 1,
+    "file": "eng-southampton.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/southampton.2a25d8e7.png",
+    "sourceName": "Southampton"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Stoke",
+    "div": 2,
+    "file": "eng-stoke.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/stoke-city.d394721d.png",
+    "sourceName": "Stoke City"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Sunderland",
+    "div": 2,
+    "file": "eng-sunderland.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/sunderland.2f55baea.png",
+    "sourceName": "Sunderland"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Swansea",
+    "div": 2,
+    "file": "eng-swansea.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/swansea-city.af33720d.png",
+    "sourceName": "Swansea City"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Tottenham",
+    "div": 1,
+    "file": "eng-tottenham.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/tottenham.2d86d721.png",
+    "sourceName": "Tottenham"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Watford",
+    "div": 2,
+    "file": "eng-watford.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/watford.99d74158.png",
+    "sourceName": "Watford"
+  },
+  {
+    "lgId": "ENG",
+    "club": "West Brom",
+    "div": 2,
+    "file": "eng-west-brom.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/west-bromwich-albion.bc428244.png",
+    "sourceName": "West Bromwich Albion"
+  },
+  {
+    "lgId": "ENG",
+    "club": "West Ham",
+    "div": 1,
+    "file": "eng-west-ham.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/west-ham.c86eebf5.png",
+    "sourceName": "West Ham"
+  },
+  {
+    "lgId": "ENG",
+    "club": "Wolves",
+    "div": 1,
+    "file": "eng-wolves.png",
+    "source": "https://assets.football-logos.cc/logos/england/256x256/wolves.2c773758.png",
+    "sourceName": "Wolverhampton Wanderers"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Alavés",
+    "div": 1,
+    "file": "esp-alaves.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/deportivo.0a00d5ef.png",
+    "sourceName": "Alavés"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Albacete",
+    "div": 2,
+    "file": "esp-albacete.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/albacete.9db2efa8.png",
+    "sourceName": "Albacete"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Almería",
+    "div": 2,
+    "file": "esp-almeria.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/almeria.035789c9.png",
+    "sourceName": "Almería"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Athletic",
+    "div": 1,
+    "file": "esp-athletic.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/athletic-club.e1bfba0c.png",
+    "sourceName": "Athletic Club"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Atlético",
+    "div": 1,
+    "file": "esp-atletico.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/atletico-madrid.ba72e2cf.png",
+    "sourceName": "Atletico Madrid"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Barcelona",
+    "div": 1,
+    "file": "esp-barcelona.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/barcelona.481f5fb3.png",
+    "sourceName": "Barcelona"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Betis",
+    "div": 1,
+    "file": "esp-betis.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/real-betis.96fdee2c.png",
+    "sourceName": "Real Betis"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Burgos",
+    "div": 2,
+    "file": "esp-burgos.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/burgos.3c76e85e.png",
+    "sourceName": "Burgos CF"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Cádiz",
+    "div": 2,
+    "file": "esp-cadiz.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/cadiz.7a92622e.png",
+    "sourceName": "Cádiz CF"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Cartagena",
+    "div": 2,
+    "file": "esp-cartagena.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/fc-cartagena.d6c0324b.png",
+    "sourceName": "FC Cartagena"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Castellón",
+    "div": 2,
+    "file": "esp-castellon.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/castellon.1255e5c9.png",
+    "sourceName": "Castellón"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Celta",
+    "div": 1,
+    "file": "esp-celta.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/celta.37e88c80.png",
+    "sourceName": "Celta"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Córdoba",
+    "div": 2,
+    "file": "esp-cordoba.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/cordoba.669c976a.png",
+    "sourceName": "Córdoba"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Deportivo",
+    "div": 2,
+    "file": "esp-deportivo.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/deportivo-la-coruna.dc2b61ed.png",
+    "sourceName": "Deportivo La Coruña"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Eibar",
+    "div": 2,
+    "file": "esp-eibar.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/eibar.fb420260.png",
+    "sourceName": "Eibar"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Elche",
+    "div": 2,
+    "file": "esp-elche.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/elche.027b16d8.png",
+    "sourceName": "Elche"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Eldense",
+    "div": 2,
+    "file": "esp-eldense.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/eldense.705cd0a6.png",
+    "sourceName": "CD Eldense"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Espanyol",
+    "div": 1,
+    "file": "esp-espanyol.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/espanyol.813c5e9a.png",
+    "sourceName": "Espanyol"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Ferrol",
+    "div": 2,
+    "file": "esp-ferrol.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/racing-club-ferrol.6d69e693.png",
+    "sourceName": "Racing Club Ferrol"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Getafe",
+    "div": 1,
+    "file": "esp-getafe.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/getafe.edd42c3d.png",
+    "sourceName": "Getafe"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Girona",
+    "div": 1,
+    "file": "esp-girona.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/girona.14b919ce.png",
+    "sourceName": "Girona"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Granada",
+    "div": 2,
+    "file": "esp-granada.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/granada.041e574a.png",
+    "sourceName": "Granada"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Huesca",
+    "div": 2,
+    "file": "esp-huesca.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/huesca.df527cba.png",
+    "sourceName": "Huesca"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Las Palmas",
+    "div": 1,
+    "file": "esp-las-palmas.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/las-palmas.61c92246.png",
+    "sourceName": "Las Palmas"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Leganés",
+    "div": 1,
+    "file": "esp-leganes.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/leganes.8892e6af.png",
+    "sourceName": "Leganés"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Levante",
+    "div": 2,
+    "file": "esp-levante.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/levante.f0f15e76.png",
+    "sourceName": "Levante"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Málaga",
+    "div": 2,
+    "file": "esp-malaga.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/malaga.87c4eb85.png",
+    "sourceName": "Málaga"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Mallorca",
+    "div": 1,
+    "file": "esp-mallorca.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/mallorca.d244a18a.png",
+    "sourceName": "Mallorca"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Mirandés",
+    "div": 2,
+    "file": "esp-mirandes.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/mirandes.18fc2133.png",
+    "sourceName": "Mirandés"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Osasuna",
+    "div": 1,
+    "file": "esp-osasuna.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/osasuna.c82eefd4.png",
+    "sourceName": "Osasuna"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Oviedo",
+    "div": 2,
+    "file": "esp-oviedo.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/oviedo.d7b26c52.png",
+    "sourceName": "Oviedo"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Racing Santander",
+    "div": 2,
+    "file": "esp-racing-santander.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/racing.0307d989.png",
+    "sourceName": "Racing Santander"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Rayo",
+    "div": 1,
+    "file": "esp-rayo.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/rayo-vallecano.01403ff8.png",
+    "sourceName": "Rayo Vallecano"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Real Madrid",
+    "div": 1,
+    "file": "esp-real-madrid.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/real-madrid.5ce15611.png",
+    "sourceName": "Real Madrid"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Real Sociedad",
+    "div": 1,
+    "file": "esp-real-sociedad.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/real-sociedad.501e3b1e.png",
+    "sourceName": "Real Sociedad"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Sevilla",
+    "div": 1,
+    "file": "esp-sevilla.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/sevilla.b741a6ce.png",
+    "sourceName": "Sevilla"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Sporting Gijón",
+    "div": 2,
+    "file": "esp-sporting-gijon.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/sporting-gijon.c5cea7ea.png",
+    "sourceName": "Sporting Gijón"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Tenerife",
+    "div": 2,
+    "file": "esp-tenerife.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/tenerife.37049330.png",
+    "sourceName": "Tenerife"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Valencia",
+    "div": 1,
+    "file": "esp-valencia.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/valencia.f9d9eee2.png",
+    "sourceName": "Valencia"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Valladolid",
+    "div": 1,
+    "file": "esp-valladolid.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/valladolid.077e0c97.png",
+    "sourceName": "Real Valladolid"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Villarreal",
+    "div": 1,
+    "file": "esp-villarreal.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/villarreal.b0313369.png",
+    "sourceName": "Villarreal"
+  },
+  {
+    "lgId": "ESP",
+    "club": "Zaragoza",
+    "div": 2,
+    "file": "esp-zaragoza.png",
+    "source": "https://assets.football-logos.cc/logos/spain/256x256/zaragoza.9f833698.png",
+    "sourceName": "Real Zaragoza"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Ajaccio",
+    "div": 2,
+    "file": "fra-ajaccio.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/ajaccio.4f701b2d.png",
+    "sourceName": "AC Ajaccio"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Amiens",
+    "div": 2,
+    "file": "fra-amiens.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/amiens.76a030b0.png",
+    "sourceName": "Amiens SC"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Angers",
+    "div": 1,
+    "file": "fra-angers.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/angers.e33bec50.png",
+    "sourceName": "Angers"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Annecy",
+    "div": 2,
+    "file": "fra-annecy.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/annecy.7bfb27fe.png",
+    "sourceName": "Annecy"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Auxerre",
+    "div": 1,
+    "file": "fra-auxerre.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/auxerre.1eaae387.png",
+    "sourceName": "Auxerre"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Bastia",
+    "div": 2,
+    "file": "fra-bastia.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/bastia.ef7d8b23.png",
+    "sourceName": "SC Bastia"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Brest",
+    "div": 1,
+    "file": "fra-brest.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/brest.bdb50f5e.png",
+    "sourceName": "Brest"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Caen",
+    "div": 2,
+    "file": "fra-caen.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/stade-malherbe-caen.82994897.png",
+    "sourceName": "Stade Malherbe Caen"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Clermont",
+    "div": 2,
+    "file": "fra-clermont.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/clermont-foot.03374383.png",
+    "sourceName": "Clermont Foot"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Dunkerque",
+    "div": 2,
+    "file": "fra-dunkerque.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/dunkerque.6dc2bb68.png",
+    "sourceName": "Dunkerque"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Grenoble",
+    "div": 2,
+    "file": "fra-grenoble.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/grenoble-foot-38.4559d085.png",
+    "sourceName": "Grenoble Foot 38"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Guingamp",
+    "div": 2,
+    "file": "fra-guingamp.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/guingamp.40fd0c62.png",
+    "sourceName": "EA Guingamp"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Laval",
+    "div": 2,
+    "file": "fra-laval.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/stade-lavallois.ec66fc25.png",
+    "sourceName": "Stade Lavallois"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Le Havre",
+    "div": 1,
+    "file": "fra-le-havre.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/le-havre-ac.8456f0f4.png",
+    "sourceName": "Le Havre AC"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Lens",
+    "div": 1,
+    "file": "fra-lens.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/rc-lens.efcf2aff.png",
+    "sourceName": "RC Lens"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Lille",
+    "div": 1,
+    "file": "fra-lille.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/lille.451f5326.png",
+    "sourceName": "Lille"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Lorient",
+    "div": 2,
+    "file": "fra-lorient.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/lorient.4ae29510.png",
+    "sourceName": "Lorient FC"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Lyon",
+    "div": 1,
+    "file": "fra-lyon.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/lyon.b44ff7aa.png",
+    "sourceName": "Olympique Lyonnais"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Marseille",
+    "div": 1,
+    "file": "fra-marseille.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/marseille.92b6437c.png",
+    "sourceName": "Marseille"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Martigues",
+    "div": 2,
+    "file": "fra-martigues.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/fc-martigues.91b72785.png",
+    "sourceName": "FC Martigues"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Metz",
+    "div": 2,
+    "file": "fra-metz.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/fc-metz.1a20cbee.png",
+    "sourceName": "FC Metz"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Monaco",
+    "div": 1,
+    "file": "fra-monaco.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/as-monaco.51dd5065.png",
+    "sourceName": "AS Monaco"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Montpellier",
+    "div": 1,
+    "file": "fra-montpellier.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/montpellier.e048338a.png",
+    "sourceName": "Montpellier"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Nantes",
+    "div": 1,
+    "file": "fra-nantes.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/nantes.92be1c98.png",
+    "sourceName": "Nantes"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Nice",
+    "div": 1,
+    "file": "fra-nice.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/nice.e1cdc4f3.png",
+    "sourceName": "Nice"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Paris FC",
+    "div": 2,
+    "file": "fra-paris-fc.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/paris-fc.3e31d6c5.png",
+    "sourceName": "Paris FC"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Pau",
+    "div": 2,
+    "file": "fra-pau.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/pau.6ae1c32f.png",
+    "sourceName": "Pau FC"
+  },
+  {
+    "lgId": "FRA",
+    "club": "PSG",
+    "div": 1,
+    "file": "fra-psg.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/paris-saint-germain.7d591ccb.png",
+    "sourceName": "PSG"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Red Star",
+    "div": 2,
+    "file": "fra-red-star.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/red-star-fc.73523ab8.png",
+    "sourceName": "Red Star FC"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Reims",
+    "div": 1,
+    "file": "fra-reims.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/stade-de-reims.8cae745b.png",
+    "sourceName": "Stade de Reims"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Rennes",
+    "div": 1,
+    "file": "fra-rennes.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/rennes.6d90b3c1.png",
+    "sourceName": "Rennes"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Rodez",
+    "div": 2,
+    "file": "fra-rodez.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/rodez-af.8b06a0d8.png",
+    "sourceName": "Rodez AF"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Saint-Étienne",
+    "div": 1,
+    "file": "fra-saint-etienne.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/as-saint-etienne.b6d9c83b.png",
+    "sourceName": "AS Saint-Étienne"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Strasbourg",
+    "div": 1,
+    "file": "fra-strasbourg.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/rc-strasbourg-alsace.d91bd009.png",
+    "sourceName": "RC Strasbourg Alsace"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Toulouse",
+    "div": 1,
+    "file": "fra-toulouse.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/toulouse.67db8b0f.png",
+    "sourceName": "Toulouse"
+  },
+  {
+    "lgId": "FRA",
+    "club": "Troyes",
+    "div": 2,
+    "file": "fra-troyes.png",
+    "source": "https://assets.football-logos.cc/logos/france/256x256/troyes.696cfe28.png",
+    "sourceName": "Troyes"
+  },
+  {
+    "lgId": "GER",
+    "club": "Augsburg",
+    "div": 1,
+    "file": "ger-augsburg.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/augsburg.2bc910e0.png",
+    "sourceName": "Augsburg"
+  },
+  {
+    "lgId": "GER",
+    "club": "Bayern",
+    "div": 1,
+    "file": "ger-bayern.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/bayern-munchen.6c38f13a.png",
+    "sourceName": "Bayern Munich"
+  },
+  {
+    "lgId": "GER",
+    "club": "Bochum",
+    "div": 1,
+    "file": "ger-bochum.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/vfl-bochum.6288d903.png",
+    "sourceName": "VfL Bochum"
+  },
+  {
+    "lgId": "GER",
+    "club": "Braunschweig",
+    "div": 2,
+    "file": "ger-braunschweig.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/eintracht-braunschweig.e715b570.png",
+    "sourceName": "Eintracht Braunschweig"
+  },
+  {
+    "lgId": "GER",
+    "club": "Darmstadt",
+    "div": 2,
+    "file": "ger-darmstadt.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/darmstadt.324ece43.png",
+    "sourceName": "SV Darmstadt 98"
+  },
+  {
+    "lgId": "GER",
+    "club": "Dortmund",
+    "div": 1,
+    "file": "ger-dortmund.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/borussia-dortmund.09ffedcd.png",
+    "sourceName": "Borussia Dortmund"
+  },
+  {
+    "lgId": "GER",
+    "club": "Düsseldorf",
+    "div": 2,
+    "file": "ger-dusseldorf.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/fortuna-dusseldorf.e6e456f0.png",
+    "sourceName": "Fortuna Düsseldorf"
+  },
+  {
+    "lgId": "GER",
+    "club": "Eintracht Frankfurt",
+    "div": 1,
+    "file": "ger-eintracht-frankfurt.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/eintracht-frankfurt.a8244b07.png",
+    "sourceName": "Eintracht Frankfurt"
+  },
+  {
+    "lgId": "GER",
+    "club": "Elversberg",
+    "div": 2,
+    "file": "ger-elversberg.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/sv-elversberg.b3a70987.png",
+    "sourceName": "SV Elversberg"
+  },
+  {
+    "lgId": "GER",
+    "club": "Freiburg",
+    "div": 1,
+    "file": "ger-freiburg.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/freiburg.2eec4784.png",
+    "sourceName": "Freiburg"
+  },
+  {
+    "lgId": "GER",
+    "club": "Gladbach",
+    "div": 1,
+    "file": "ger-gladbach.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/borussia-monchengladbach.94366357.png",
+    "sourceName": "Borussia Mönchengladbach"
+  },
+  {
+    "lgId": "GER",
+    "club": "Greuther Fürth",
+    "div": 2,
+    "file": "ger-greuther-furth.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/spvgg-greuther-furth.a2c53e85.png",
+    "sourceName": "SpVgg Greuther Fürth"
+  },
+  {
+    "lgId": "GER",
+    "club": "Hamburg",
+    "div": 2,
+    "file": "ger-hamburg.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/hamburger-sv.04c2a597.png",
+    "sourceName": "Hamburger SV"
+  },
+  {
+    "lgId": "GER",
+    "club": "Hannover",
+    "div": 2,
+    "file": "ger-hannover.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/hannover-96.0da3807f.png",
+    "sourceName": "Hannover 96"
+  },
+  {
+    "lgId": "GER",
+    "club": "Heidenheim",
+    "div": 1,
+    "file": "ger-heidenheim.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/fc-heidenheim.5798143f.png",
+    "sourceName": "FC Heidenheim"
+  },
+  {
+    "lgId": "GER",
+    "club": "Hertha",
+    "div": 2,
+    "file": "ger-hertha.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/hertha-bsc.2f104454.png",
+    "sourceName": "Hertha BSC"
+  },
+  {
+    "lgId": "GER",
+    "club": "Hoffenheim",
+    "div": 1,
+    "file": "ger-hoffenheim.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/hoffenheim.23c07771.png",
+    "sourceName": "Hoffenheim"
+  },
+  {
+    "lgId": "GER",
+    "club": "Holstein Kiel",
+    "div": 1,
+    "file": "ger-holstein-kiel.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/holstein-kiel.88cbd066.png",
+    "sourceName": "Holstein Kiel"
+  },
+  {
+    "lgId": "GER",
+    "club": "Kaiserslautern",
+    "div": 2,
+    "file": "ger-kaiserslautern.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/fc-kaiserslautern.dd69845b.png",
+    "sourceName": "FC Kaiserslautern"
+  },
+  {
+    "lgId": "GER",
+    "club": "Karlsruher",
+    "div": 2,
+    "file": "ger-karlsruher.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/karlsruher.c1e834ee.png",
+    "sourceName": "Karlsruher SC"
+  },
+  {
+    "lgId": "GER",
+    "club": "Köln",
+    "div": 2,
+    "file": "ger-koln.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/koln.47dabc55.png",
+    "sourceName": "FC Köln"
+  },
+  {
+    "lgId": "GER",
+    "club": "Leipzig",
+    "div": 1,
+    "file": "ger-leipzig.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/rb-leipzig.9d65faeb.png",
+    "sourceName": "RB Leipzig"
+  },
+  {
+    "lgId": "GER",
+    "club": "Leverkusen",
+    "div": 1,
+    "file": "ger-leverkusen.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/bayer-leverkusen.72f211d8.png",
+    "sourceName": "Bayer Leverkusen"
+  },
+  {
+    "lgId": "GER",
+    "club": "Magdeburg",
+    "div": 2,
+    "file": "ger-magdeburg.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/1-fc-magdeburg.d286014d.png",
+    "sourceName": "1. FC Magdeburg"
+  },
+  {
+    "lgId": "GER",
+    "club": "Mainz",
+    "div": 1,
+    "file": "ger-mainz.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/mainz-05.508fc81a.png",
+    "sourceName": "Mainz 05"
+  },
+  {
+    "lgId": "GER",
+    "club": "Münster",
+    "div": 2,
+    "file": "ger-munster.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/preussen-munster.ac6722b7.png",
+    "sourceName": "Preußen Münster"
+  },
+  {
+    "lgId": "GER",
+    "club": "Nürnberg",
+    "div": 2,
+    "file": "ger-nurnberg.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/fc-nurnberg.7688006f.png",
+    "sourceName": "FC Nürnberg"
+  },
+  {
+    "lgId": "GER",
+    "club": "Paderborn",
+    "div": 2,
+    "file": "ger-paderborn.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/paderborn.5abab17b.png",
+    "sourceName": "SC Paderborn"
+  },
+  {
+    "lgId": "GER",
+    "club": "Regensburg",
+    "div": 2,
+    "file": "ger-regensburg.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/jahn.14b8e3e6.png",
+    "sourceName": "Jahn"
+  },
+  {
+    "lgId": "GER",
+    "club": "Schalke",
+    "div": 2,
+    "file": "ger-schalke.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/schalke-04.9a871467.png",
+    "sourceName": "Schalke 04"
+  },
+  {
+    "lgId": "GER",
+    "club": "St. Pauli",
+    "div": 1,
+    "file": "ger-st-pauli.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/st-pauli.929cbb17.png",
+    "sourceName": "St Pauli"
+  },
+  {
+    "lgId": "GER",
+    "club": "Stuttgart",
+    "div": 1,
+    "file": "ger-stuttgart.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/vfb-stuttgart.5b4b15e7.png",
+    "sourceName": "VfB Stuttgart"
+  },
+  {
+    "lgId": "GER",
+    "club": "Ulm",
+    "div": 2,
+    "file": "ger-ulm.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/ssv-ulm-1846.8d2d6993.png",
+    "sourceName": "SSV Ulm 1846 Fußball"
+  },
+  {
+    "lgId": "GER",
+    "club": "Union Berlin",
+    "div": 1,
+    "file": "ger-union-berlin.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/union-berlin.b0d180f9.png",
+    "sourceName": "Union Berlin"
+  },
+  {
+    "lgId": "GER",
+    "club": "Werder Bremen",
+    "div": 1,
+    "file": "ger-werder-bremen.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/werder-bremen.f8333154.png",
+    "sourceName": "Werder Bremen"
+  },
+  {
+    "lgId": "GER",
+    "club": "Wolfsburg",
+    "div": 1,
+    "file": "ger-wolfsburg.png",
+    "source": "https://assets.football-logos.cc/logos/germany/256x256/wolfsburg.11ad950e.png",
+    "sourceName": "Wolfsburg"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Atalanta",
+    "div": 1,
+    "file": "ita-atalanta.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/atalanta.45225436.png",
+    "sourceName": "Atalanta"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Bari",
+    "div": 2,
+    "file": "ita-bari.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/bari.e31ae6fd.png",
+    "sourceName": "Bari"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Bologna",
+    "div": 1,
+    "file": "ita-bologna.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/bologna.a78d435f.png",
+    "sourceName": "Bologna"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Brescia",
+    "div": 2,
+    "file": "ita-brescia.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/brescia.10b956d5.png",
+    "sourceName": "Brescia"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Cagliari",
+    "div": 1,
+    "file": "ita-cagliari.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/cagliari.1c3353f1.png",
+    "sourceName": "Cagliari"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Carrarese",
+    "div": 2,
+    "file": "ita-carrarese.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/carrarese.512584be.png",
+    "sourceName": "Carrarese Calcio"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Catanzaro",
+    "div": 2,
+    "file": "ita-catanzaro.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/catanzaro.2deb6417.png",
+    "sourceName": "Catanzaro"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Cesena",
+    "div": 2,
+    "file": "ita-cesena.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/cesena.f6a73bf8.png",
+    "sourceName": "Cesena FC"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Cittadella",
+    "div": 2,
+    "file": "ita-cittadella.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/cittadella.669924de.png",
+    "sourceName": "Cittadella"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Como",
+    "div": 1,
+    "file": "ita-como.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/como-1907.1a1430cd.png",
+    "sourceName": "Como 1907"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Cosenza",
+    "div": 2,
+    "file": "ita-cosenza.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/cosenza.4f273bab.png",
+    "sourceName": "Cosenza"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Cremonese",
+    "div": 2,
+    "file": "ita-cremonese.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/cremonese.4021eef2.png",
+    "sourceName": "Cremonese"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Empoli",
+    "div": 1,
+    "file": "ita-empoli.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/empoli.1eeeb2b4.png",
+    "sourceName": "Empoli"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Fiorentina",
+    "div": 1,
+    "file": "ita-fiorentina.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/fiorentina.7ba101c2.png",
+    "sourceName": "Fiorentina"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Frosinone",
+    "div": 2,
+    "file": "ita-frosinone.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/frosinone.8cc89626.png",
+    "sourceName": "Frosinone Calcio"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Genoa",
+    "div": 1,
+    "file": "ita-genoa.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/genoa.a5ec9be4.png",
+    "sourceName": "Genoa"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Inter",
+    "div": 1,
+    "file": "ita-inter.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/milan.75d56f90.png",
+    "sourceName": "Milan"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Juve Stabia",
+    "div": 2,
+    "file": "ita-juve-stabia.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/juve-stabia.d44cbe92.png",
+    "sourceName": "Juve Stabia"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Juventus",
+    "div": 1,
+    "file": "ita-juventus.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/juventus.a8baf848.png",
+    "sourceName": "Juventus"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Lazio",
+    "div": 1,
+    "file": "ita-lazio.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/lazio.2386d28d.png",
+    "sourceName": "Lazio"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Lecce",
+    "div": 1,
+    "file": "ita-lecce.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/lecce.18baee06.png",
+    "sourceName": "Lecce"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Mantova",
+    "div": 2,
+    "file": "ita-mantova.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/mantova-1911.4835421d.png",
+    "sourceName": "Mantova 1911"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Milan",
+    "div": 1,
+    "file": "ita-milan.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/milan.75d56f90.png",
+    "sourceName": "Milan"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Modena",
+    "div": 2,
+    "file": "ita-modena.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/modena.13041e43.png",
+    "sourceName": "Modena"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Monza",
+    "div": 1,
+    "file": "ita-monza.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/monza.a0b0c166.png",
+    "sourceName": "AC Monza"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Napoli",
+    "div": 1,
+    "file": "ita-napoli.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/napoli.ee47a50b.png",
+    "sourceName": "Napoli"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Palermo",
+    "div": 2,
+    "file": "ita-palermo.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/palermo.46444a50.png",
+    "sourceName": "Palermo"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Parma",
+    "div": 1,
+    "file": "ita-parma.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/parma.ca4e3120.png",
+    "sourceName": "Parma"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Pisa",
+    "div": 2,
+    "file": "ita-pisa.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/pisa.390b80ab.png",
+    "sourceName": "Pisa"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Reggiana",
+    "div": 2,
+    "file": "ita-reggiana.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/reggiana.faa04ed1.png",
+    "sourceName": "Reggiana"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Roma",
+    "div": 1,
+    "file": "ita-roma.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/roma.034a933e.png",
+    "sourceName": "AS Roma"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Salernitana",
+    "div": 2,
+    "file": "ita-salernitana.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/salernitana.8ad5f9b1.png",
+    "sourceName": "Salernitana"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Sampdoria",
+    "div": 2,
+    "file": "ita-sampdoria.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/sampdoria.61ff2cf7.png",
+    "sourceName": "Sampdoria"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Sassuolo",
+    "div": 2,
+    "file": "ita-sassuolo.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/sassuolo.1b38db1d.png",
+    "sourceName": "Sassuolo"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Spezia",
+    "div": 2,
+    "file": "ita-spezia.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/spezia.25f9276f.png",
+    "sourceName": "Spezia"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Südtirol",
+    "div": 2,
+    "file": "ita-sudtirol.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/suditrol.9cfa3c20.png",
+    "sourceName": "Suditrol"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Torino",
+    "div": 1,
+    "file": "ita-torino.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/torino.a6c78dd6.png",
+    "sourceName": "Torino"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Udinese",
+    "div": 1,
+    "file": "ita-udinese.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/udinese.a69e0bef.png",
+    "sourceName": "Udinese"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Venezia",
+    "div": 1,
+    "file": "ita-venezia.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/venezia.b006ee57.png",
+    "sourceName": "Venezia"
+  },
+  {
+    "lgId": "ITA",
+    "club": "Verona",
+    "div": 1,
+    "file": "ita-verona.png",
+    "source": "https://assets.football-logos.cc/logos/italy/256x256/verona.1da2d2b7.png",
+    "sourceName": "Hellas Verona"
+  },
+  {
+    "lgId": "NED",
+    "club": "ADO Den Haag",
+    "div": 2,
+    "file": "ned-ado-den-haag.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/ado-den-haag.aed6f890.png",
+    "sourceName": "ADO Den Haag"
+  },
+  {
+    "lgId": "NED",
+    "club": "Ajax",
+    "div": 1,
+    "file": "ned-ajax.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/ajax.fadc62c4.png",
+    "sourceName": "Ajax"
+  },
+  {
+    "lgId": "NED",
+    "club": "Almere City",
+    "div": 1,
+    "file": "ned-almere-city.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/almere-city-fc.28f26b3f.png",
+    "sourceName": "Almere City FC"
+  },
+  {
+    "lgId": "NED",
+    "club": "AZ",
+    "div": 1,
+    "file": "ned-az.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/az-alkmaar.a5883ab7.png",
+    "sourceName": "AZ Alkmaar"
+  },
+  {
+    "lgId": "NED",
+    "club": "Cambuur",
+    "div": 2,
+    "file": "ned-cambuur.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/sc-cambuur.f7025c05.png",
+    "sourceName": "SC Cambuur"
+  },
+  {
+    "lgId": "NED",
+    "club": "De Graafschap",
+    "div": 2,
+    "file": "ned-de-graafschap.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/de-graafschap.3c2375e6.png",
+    "sourceName": "De Graafschap"
+  },
+  {
+    "lgId": "NED",
+    "club": "Den Bosch",
+    "div": 2,
+    "file": "ned-den-bosch.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/fc-den-bosch.ccaa4af5.png",
+    "sourceName": "FC Den Bosch"
+  },
+  {
+    "lgId": "NED",
+    "club": "Dordrecht",
+    "div": 2,
+    "file": "ned-dordrecht.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/fc-dordrecht.d2734b11.png",
+    "sourceName": "FC Dordrecht"
+  },
+  {
+    "lgId": "NED",
+    "club": "Eindhoven",
+    "div": 2,
+    "file": "ned-eindhoven.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/fc-eindhoven.e4dfb089.png",
+    "sourceName": "FC Eindhoven"
+  },
+  {
+    "lgId": "NED",
+    "club": "Emmen",
+    "div": 2,
+    "file": "ned-emmen.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/fc-emmen.8aca22fe.png",
+    "sourceName": "FC Emmen"
+  },
+  {
+    "lgId": "NED",
+    "club": "Excelsior",
+    "div": 2,
+    "file": "ned-excelsior.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/excelsior-rotterdam.283370b9.png",
+    "sourceName": "Excelsior Rotterdam"
+  },
+  {
+    "lgId": "NED",
+    "club": "Feyenoord",
+    "div": 1,
+    "file": "ned-feyenoord.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/feyenoord.06e393bc.png",
+    "sourceName": "Feyenoord"
+  },
+  {
+    "lgId": "NED",
+    "club": "Fortuna Sittard",
+    "div": 1,
+    "file": "ned-fortuna-sittard.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/fortuna-sittard.05ad8019.png",
+    "sourceName": "Fortuna Sittard"
+  },
+  {
+    "lgId": "NED",
+    "club": "Go Ahead Eagles",
+    "div": 1,
+    "file": "ned-go-ahead-eagles.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/go-ahead-eagles.8a93983d.png",
+    "sourceName": "Go Ahead Eagles"
+  },
+  {
+    "lgId": "NED",
+    "club": "Groningen",
+    "div": 1,
+    "file": "ned-groningen.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/fc-groningen.7adf21bc.png",
+    "sourceName": "FC Groningen"
+  },
+  {
+    "lgId": "NED",
+    "club": "Heerenveen",
+    "div": 1,
+    "file": "ned-heerenveen.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/sc-heerenveen.c36c6c06.png",
+    "sourceName": "sc Heerenveen"
+  },
+  {
+    "lgId": "NED",
+    "club": "Helmond Sport",
+    "div": 2,
+    "file": "ned-helmond-sport.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/helmond-sport.bf112ab5.png",
+    "sourceName": "Helmond Sport"
+  },
+  {
+    "lgId": "NED",
+    "club": "Heracles",
+    "div": 1,
+    "file": "ned-heracles.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/heracles-almelo.c6007883.png",
+    "sourceName": "Heracles Almelo"
+  },
+  {
+    "lgId": "NED",
+    "club": "Jong Ajax",
+    "div": 2,
+    "file": "ned-jong-ajax.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/ajax.fadc62c4.png",
+    "sourceName": "Ajax"
+  },
+  {
+    "lgId": "NED",
+    "club": "Jong AZ",
+    "div": 2,
+    "file": "ned-jong-az.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/az-alkmaar.a5883ab7.png",
+    "sourceName": "AZ Alkmaar"
+  },
+  {
+    "lgId": "NED",
+    "club": "Jong PSV",
+    "div": 2,
+    "file": "ned-jong-psv.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/psv.b5ebd0db.png",
+    "sourceName": "PSV Eindhoven"
+  },
+  {
+    "lgId": "NED",
+    "club": "Jong Utrecht",
+    "div": 2,
+    "file": "ned-jong-utrecht.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/fc-utrecht.a8ccd806.png",
+    "sourceName": "FC Utrecht"
+  },
+  {
+    "lgId": "NED",
+    "club": "MVV",
+    "div": 2,
+    "file": "ned-mvv.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/mvv-maastricht.78dd0905.png",
+    "sourceName": "MVV Maastricht"
+  },
+  {
+    "lgId": "NED",
+    "club": "NAC Breda",
+    "div": 1,
+    "file": "ned-nac-breda.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/nac-breda.57a892cd.png",
+    "sourceName": "NAC Breda"
+  },
+  {
+    "lgId": "NED",
+    "club": "NEC",
+    "div": 1,
+    "file": "ned-nec.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/nec-nijmegen.e9cc5441.png",
+    "sourceName": "N.E.C. Nijmegen"
+  },
+  {
+    "lgId": "NED",
+    "club": "Oss",
+    "div": 2,
+    "file": "ned-oss.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/top-oss.a1de2cdd.png",
+    "sourceName": "TOP Oss"
+  },
+  {
+    "lgId": "NED",
+    "club": "PSV",
+    "div": 1,
+    "file": "ned-psv.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/psv.b5ebd0db.png",
+    "sourceName": "PSV Eindhoven"
+  },
+  {
+    "lgId": "NED",
+    "club": "RKC",
+    "div": 1,
+    "file": "ned-rkc.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/rkc-waalwijk.c6f20fed.png",
+    "sourceName": "RKC Waalwijk"
+  },
+  {
+    "lgId": "NED",
+    "club": "Roda JC",
+    "div": 2,
+    "file": "ned-roda-jc.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/roda-jc-kerkrade.ee519c03.png",
+    "sourceName": "Roda JC Kerkrade"
+  },
+  {
+    "lgId": "NED",
+    "club": "Sparta",
+    "div": 1,
+    "file": "ned-sparta.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/sparta-rotterdam.03d6a993.png",
+    "sourceName": "Sparta Rotterdam"
+  },
+  {
+    "lgId": "NED",
+    "club": "Telstar",
+    "div": 2,
+    "file": "ned-telstar.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/telstar.c6ac77b5.png",
+    "sourceName": "Telstar"
+  },
+  {
+    "lgId": "NED",
+    "club": "Twente",
+    "div": 1,
+    "file": "ned-twente.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/twente.6ab33058.png",
+    "sourceName": "Twente"
+  },
+  {
+    "lgId": "NED",
+    "club": "Utrecht",
+    "div": 1,
+    "file": "ned-utrecht.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/fc-utrecht.a8ccd806.png",
+    "sourceName": "FC Utrecht"
+  },
+  {
+    "lgId": "NED",
+    "club": "Vitesse",
+    "div": 2,
+    "file": "ned-vitesse.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/vitesse.ffea0429.png",
+    "sourceName": "Vitesse"
+  },
+  {
+    "lgId": "NED",
+    "club": "Volendam",
+    "div": 2,
+    "file": "ned-volendam.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/volendam.f594d394.png",
+    "sourceName": "Volendam"
+  },
+  {
+    "lgId": "NED",
+    "club": "VVV",
+    "div": 2,
+    "file": "ned-vvv.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/vvv-venlo.44bb6cfa.png",
+    "sourceName": "VVV-Venlo"
+  },
+  {
+    "lgId": "NED",
+    "club": "Willem II",
+    "div": 1,
+    "file": "ned-willem-ii.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/willem-ii.e9a62d88.png",
+    "sourceName": "Willem II"
+  },
+  {
+    "lgId": "NED",
+    "club": "Zwolle",
+    "div": 1,
+    "file": "ned-zwolle.png",
+    "source": "https://assets.football-logos.cc/logos/netherlands/256x256/pec-zwolle.bb36e35d.png",
+    "sourceName": "PEC Zwolle"
+  },
+  {
+    "lgId": "POR",
+    "club": "Académico Viseu",
+    "div": 2,
+    "file": "por-academico-viseu.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/academico-de-viseu.474a481b.png",
+    "sourceName": "Académico de Viseu"
+  },
+  {
+    "lgId": "POR",
+    "club": "Alverca",
+    "div": 2,
+    "file": "por-alverca.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/alverca.56d58075.png",
+    "sourceName": "Alverca"
+  },
+  {
+    "lgId": "POR",
+    "club": "Amora",
+    "div": 2,
+    "file": "por-amora.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/amora.1b7e7a84.png",
+    "sourceName": "Amora"
+  },
+  {
+    "lgId": "POR",
+    "club": "Arouca",
+    "div": 1,
+    "file": "por-arouca.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/arouca.d6d604e3.png",
+    "sourceName": "Arouca"
+  },
+  {
+    "lgId": "POR",
+    "club": "AVS",
+    "div": 1,
+    "file": "por-avs.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/avs-futebol-sad.7ac45a37.png",
+    "sourceName": "AVS Futebol SAD"
+  },
+  {
+    "lgId": "POR",
+    "club": "Benfica",
+    "div": 1,
+    "file": "por-benfica.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/benfica.3e4d3034.png",
+    "sourceName": "Benfica"
+  },
+  {
+    "lgId": "POR",
+    "club": "Boavista",
+    "div": 1,
+    "file": "por-boavista.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/boavista.11230510.png",
+    "sourceName": "Boavista"
+  },
+  {
+    "lgId": "POR",
+    "club": "Braga",
+    "div": 1,
+    "file": "por-braga.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/sc-braga.54b1497d.png",
+    "sourceName": "SC Braga"
+  },
+  {
+    "lgId": "POR",
+    "club": "Caldas",
+    "div": 2,
+    "file": "por-caldas.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/caldas.6de692eb.png",
+    "sourceName": "Caldas"
+  },
+  {
+    "lgId": "POR",
+    "club": "Casa Pia",
+    "div": 1,
+    "file": "por-casa-pia.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/casa-pia-ac.cce4edb7.png",
+    "sourceName": "Casa Pia AC"
+  },
+  {
+    "lgId": "POR",
+    "club": "Chaves",
+    "div": 2,
+    "file": "por-chaves.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/chaves.b508c67f.png",
+    "sourceName": "Grupo Desportivo de Chaves"
+  },
+  {
+    "lgId": "POR",
+    "club": "Estoril",
+    "div": 1,
+    "file": "por-estoril.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/estoril.d82142b7.png",
+    "sourceName": "Estoril"
+  },
+  {
+    "lgId": "POR",
+    "club": "Estrela Amadora",
+    "div": 1,
+    "file": "por-estrela-amadora.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/estrela-da-amadora.adcd4744.png",
+    "sourceName": "Estrela da Amadora"
+  },
+  {
+    "lgId": "POR",
+    "club": "Famalicão",
+    "div": 1,
+    "file": "por-famalicao.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/famalicao.98d6893a.png",
+    "sourceName": "Famalicao"
+  },
+  {
+    "lgId": "POR",
+    "club": "Farense",
+    "div": 1,
+    "file": "por-farense.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/farense.200d9079.png",
+    "sourceName": "Farense"
+  },
+  {
+    "lgId": "POR",
+    "club": "Feirense",
+    "div": 2,
+    "file": "por-feirense.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/feirense.f77f7b94.png",
+    "sourceName": "Feirense"
+  },
+  {
+    "lgId": "POR",
+    "club": "Felgueiras",
+    "div": 2,
+    "file": "por-felgueiras.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/felgueiras.44c68f01.png",
+    "sourceName": "Felgueiras"
+  },
+  {
+    "lgId": "POR",
+    "club": "Gil Vicente",
+    "div": 1,
+    "file": "por-gil-vicente.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/gil-vicente.d1a5cb58.png",
+    "sourceName": "Gil Vicente"
+  },
+  {
+    "lgId": "POR",
+    "club": "Leixões",
+    "div": 2,
+    "file": "por-leixoes.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/leixoes.18cc3c7e.png",
+    "sourceName": "Leixões"
+  },
+  {
+    "lgId": "POR",
+    "club": "Mafra",
+    "div": 2,
+    "file": "por-mafra.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/mafra.b961afbf.png",
+    "sourceName": "Mafra"
+  },
+  {
+    "lgId": "POR",
+    "club": "Marítimo",
+    "div": 2,
+    "file": "por-maritimo.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/maritimo.b5b1d5e8.png",
+    "sourceName": "Marítimo"
+  },
+  {
+    "lgId": "POR",
+    "club": "Moreirense",
+    "div": 1,
+    "file": "por-moreirense.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/moreirense.f949266c.png",
+    "sourceName": "Moreirense"
+  },
+  {
+    "lgId": "POR",
+    "club": "Nacional",
+    "div": 1,
+    "file": "por-nacional.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/nacional-da-madeira.de01d6d6.png",
+    "sourceName": "Nacional da Madeira"
+  },
+  {
+    "lgId": "POR",
+    "club": "Oliveirense",
+    "div": 2,
+    "file": "por-oliveirense.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/oliveirense.acfa47cd.png",
+    "sourceName": "Oliveirense"
+  },
+  {
+    "lgId": "POR",
+    "club": "Paços de Ferreira",
+    "div": 2,
+    "file": "por-pacos-de-ferreira.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/pacos-ferreira.15976b1d.png",
+    "sourceName": "Paços Ferreira"
+  },
+  {
+    "lgId": "POR",
+    "club": "Penafiel",
+    "div": 2,
+    "file": "por-penafiel.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/penafiel.98894281.png",
+    "sourceName": "Penafiel"
+  },
+  {
+    "lgId": "POR",
+    "club": "Portimonense",
+    "div": 2,
+    "file": "por-portimonense.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/portimonense.3ea08680.png",
+    "sourceName": "Portimonense"
+  },
+  {
+    "lgId": "POR",
+    "club": "Porto",
+    "div": 1,
+    "file": "por-porto.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/fc-porto.b58f31f6.png",
+    "sourceName": "FC Porto"
+  },
+  {
+    "lgId": "POR",
+    "club": "Rio Ave",
+    "div": 1,
+    "file": "por-rio-ave.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/rio-ave.0818d764.png",
+    "sourceName": "Rio Ave"
+  },
+  {
+    "lgId": "POR",
+    "club": "Santa Clara",
+    "div": 1,
+    "file": "por-santa-clara.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/santa-clara.8e386186.png",
+    "sourceName": "Santa Clara"
+  },
+  {
+    "lgId": "POR",
+    "club": "Sporting",
+    "div": 1,
+    "file": "por-sporting.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/sporting-cp.d65b6aa6.png",
+    "sourceName": "Sporting CP"
+  },
+  {
+    "lgId": "POR",
+    "club": "Tondela",
+    "div": 2,
+    "file": "por-tondela.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/tondela.e08b9ef4.png",
+    "sourceName": "Tondela"
+  },
+  {
+    "lgId": "POR",
+    "club": "Torreense",
+    "div": 2,
+    "file": "por-torreense.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/torreense.c082ebd8.png",
+    "sourceName": "S.C.U. Torreense"
+  },
+  {
+    "lgId": "POR",
+    "club": "União de Leiria",
+    "div": 2,
+    "file": "por-uniao-de-leiria.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/leiria.d4ec7bf6.png",
+    "sourceName": "União de Leiria"
+  },
+  {
+    "lgId": "POR",
+    "club": "Vitória Guimarães",
+    "div": 1,
+    "file": "por-vitoria-guimaraes.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/vitoria-de-guimaraes.6e889363.png",
+    "sourceName": "Vitória de Guimarães"
+  },
+  {
+    "lgId": "POR",
+    "club": "Vizela",
+    "div": 2,
+    "file": "por-vizela.png",
+    "source": "https://assets.football-logos.cc/logos/portugal/256x256/vizela.fe9a9919.png",
+    "sourceName": "Vizela"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Adana Demirspor",
+    "div": 1,
+    "file": "tur-adana-demirspor.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/adana-demirspor.9806864c.png",
+    "sourceName": "Adana Demirspor"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Adanaspor",
+    "div": 2,
+    "file": "tur-adanaspor.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/adanaspor.3dd71df0.png",
+    "sourceName": "Adanaspor"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Alanyaspor",
+    "div": 1,
+    "file": "tur-alanyaspor.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/alanyaspor.f5697a8a.png",
+    "sourceName": "Alanyaspor"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Amed Sportif",
+    "div": 2,
+    "file": "tur-amed-sportif.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/amed.38690353.png",
+    "sourceName": "Amed SFK"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Ankaragücü",
+    "div": 2,
+    "file": "tur-ankaragucu.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/ankaragucu.9d37b239.png",
+    "sourceName": "Ankaragücü"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Antalyaspor",
+    "div": 1,
+    "file": "tur-antalyaspor.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/antalyaspor.a15602d3.png",
+    "sourceName": "Antalyaspor"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Başakşehir",
+    "div": 1,
+    "file": "tur-basaksehir.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/basaksehir.35ffe15e.png",
+    "sourceName": "Başakşehir"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Beşiktaş",
+    "div": 1,
+    "file": "tur-besiktas.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/besiktas.44876961.png",
+    "sourceName": "Beşiktaş"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Bodrum",
+    "div": 1,
+    "file": "tur-bodrum.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/bodrum-fk.4a7cb95d.png",
+    "sourceName": "Bodrum FK"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Boluspor",
+    "div": 2,
+    "file": "tur-boluspor.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/boluspor.0a34125f.png",
+    "sourceName": "Boluspor"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Çorum",
+    "div": 2,
+    "file": "tur-corum.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/corum.b3322201.png",
+    "sourceName": "Çorum FK"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Erokspor",
+    "div": 2,
+    "file": "tur-erokspor.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/esenler-erokspor.e7eb9a0a.png",
+    "sourceName": "Esenler Erokspor"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Erzurumspor",
+    "div": 2,
+    "file": "tur-erzurumspor.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/erzurumspor.5ea75ed9.png",
+    "sourceName": "Erzurumspor"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Eyüpspor",
+    "div": 1,
+    "file": "tur-eyupspor.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/eyupspor.61622458.png",
+    "sourceName": "Eyüpspor"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Fenerbahçe",
+    "div": 1,
+    "file": "tur-fenerbahce.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/fenerbahce.2a1e22fd.png",
+    "sourceName": "Fenerbahçe"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Galatasaray",
+    "div": 1,
+    "file": "tur-galatasaray.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/galatasaray.67179bf9.png",
+    "sourceName": "Galatasaray"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Gaziantep",
+    "div": 1,
+    "file": "tur-gaziantep.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/gaziantep.2b19f697.png",
+    "sourceName": "Gaziantep"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Gençlerbirliği",
+    "div": 2,
+    "file": "tur-genclerbirligi.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/genclerbirligi.05bc9f65.png",
+    "sourceName": "Gençlerbirliği"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Göztepe",
+    "div": 1,
+    "file": "tur-goztepe.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/goztepe-izmir.97b34eb2.png",
+    "sourceName": "Göztepe Izmir"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Hatayspor",
+    "div": 1,
+    "file": "tur-hatayspor.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/hatayspor.40e6c59a.png",
+    "sourceName": "Hatayspor"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Iğdır",
+    "div": 2,
+    "file": "tur-igd-r.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/igdir.b74788e1.png",
+    "sourceName": "Iğdır FK"
+  },
+  {
+    "lgId": "TUR",
+    "club": "İstanbulspor",
+    "div": 2,
+    "file": "tur-istanbulspor.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/istanbulspor.1671c184.png",
+    "sourceName": "İstanbulspor"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Karagümrük",
+    "div": 2,
+    "file": "tur-karagumruk.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/fatih-karagumruk.a4d349d6.png",
+    "sourceName": "Fatih Karagümrük"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Kasımpaşa",
+    "div": 1,
+    "file": "tur-kas-mpasa.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/kasimpasa.02a42456.png",
+    "sourceName": "Kasımpaşa"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Kayserispor",
+    "div": 1,
+    "file": "tur-kayserispor.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/kayserispor.527dfb92.png",
+    "sourceName": "Kayserispor"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Keçiörengücü",
+    "div": 2,
+    "file": "tur-keciorengucu.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/keciorengucu.1da4a561.png",
+    "sourceName": "Keçiörengücü"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Kocaelispor",
+    "div": 1,
+    "file": "tur-kocaelispor.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/kocaelispor.b0fcb3b7.png",
+    "sourceName": "Kocaelispor"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Konyaspor",
+    "div": 1,
+    "file": "tur-konyaspor.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/konyaspor.748221f7.png",
+    "sourceName": "Konyaspor"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Manisa",
+    "div": 2,
+    "file": "tur-manisa.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/manisa.051e348e.png",
+    "sourceName": "Manisa FK"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Pendikspor",
+    "div": 2,
+    "file": "tur-pendikspor.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/pendikspor.7167812f.png",
+    "sourceName": "Pendikspor"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Rizespor",
+    "div": 1,
+    "file": "tur-rizespor.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/rizespor.ce5e503b.png",
+    "sourceName": "Çaykur Rizespor"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Sakaryaspor",
+    "div": 2,
+    "file": "tur-sakaryaspor.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/sakaryaspor.d62f9d1a.png",
+    "sourceName": "Sakaryaspor"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Samsunspor",
+    "div": 1,
+    "file": "tur-samsunspor.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/samsunspor.7f57a80e.png",
+    "sourceName": "Samsunspor"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Şanlıurfaspor",
+    "div": 2,
+    "file": "tur-sanl-urfaspor.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/sanliurfaspor.a9775eca.png",
+    "sourceName": "Şanlıurfaspor"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Sivasspor",
+    "div": 1,
+    "file": "tur-sivasspor.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/sivasspor.4b159afe.png",
+    "sourceName": "Sivasspor"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Trabzonspor",
+    "div": 1,
+    "file": "tur-trabzonspor.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/trabzonspor.1e906ab3.png",
+    "sourceName": "Trabzonspor"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Ümraniyespor",
+    "div": 2,
+    "file": "tur-umraniyespor.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/umraniyespor.d279e79e.png",
+    "sourceName": "Ümraniyespor"
+  },
+  {
+    "lgId": "TUR",
+    "club": "Yeni Malatyaspor",
+    "div": 2,
+    "file": "tur-yeni-malatyaspor.png",
+    "source": "https://assets.football-logos.cc/logos/turkey/256x256/malatyaspor.5f965f7a.png",
+    "sourceName": "Malatyaspor"
+  }
+]

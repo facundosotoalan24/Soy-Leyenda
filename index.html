@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mi Carrera</title>
+<link rel="stylesheet" href="styles.css?v=7">
+</head>
+<body>
+<div class="w">
+  <div id="st">
+    <h1>⚽ Mi Carrera</h1>
+    <p class="s">Elegí nombre, posición y ritmo de decisiones. De los 16 años al retiro.</p>
+    <input id="nm" placeholder="Nombre del jugador" maxlength="24" aria-label="Nombre del jugador">
+    <select id="fq" aria-label="Frecuencia de decisiones">
+      <option value="1">Elegir todas las temporadas</option>
+      <option value="2">Elegir cada 2 temporadas</option>
+    </select>
+    <select id="sp" aria-label="Velocidad de simulación">
+      <option value="320">Velocidad normal</option>
+      <option value="120">Velocidad rápida</option>
+      <option value="0">Instantánea</option>
+    </select>
+    <select id="md" aria-label="Modo de juego">
+      <option value="0">Modo libre</option>
+      <option value="1">Desafío de club</option>
+    </select>
+    <select id="ch" aria-label="Desafío" hidden></select>
+    <select id="ag" aria-label="Representante">
+      <option value="0">Representante: El Amigo</option>
+      <option value="1">Representante: El Mercenario</option>
+      <option value="2">Representante: El Influyente</option>
+    </select>
+    <select id="nat" aria-label="Nacionalidad"></select>
+    <select id="mt" aria-label="Meta de carrera">
+      <option value="0">Sin meta</option>
+      <option value="1">Meta: ganar la Libertadores</option>
+      <option value="2">Meta: ganar la Champions League</option>
+      <option value="3">Meta: ganar un Mundial</option>
+      <option value="4">Meta: llegar a 85 de OVR</option>
+      <option value="5">Meta: retirarte en el club que te formó</option>
+      <option value="6">Meta: jugar 500 partidos</option>
+    </select>
+    <input id="sd" placeholder="Código de semilla (opcional, para comparar con amigos)" maxlength="12" aria-label="Código de semilla">
+    <select id="th" aria-label="Tema">
+      <option value="">Tema: automático</option>
+      <option value="light">Tema: claro</option>
+      <option value="dark">Tema: oscuro</option>
+    </select>
+    <p class="s" id="hs"></p>
+    <button class="pr" id="runBtn" type="button" hidden>▶️ Continuar carrera</button>
+    <div class="g ps" id="ps"></div>
+    <button class="pr" id="hfBtn" type="button" style="background:var(--card);color:var(--tx);border:1px solid var(--bd)">🏆 Salón de la Fama</button>
+  </div>
+
+  <div id="pl" hidden>
+    <div class="hd" id="hd">
+      <div class="hd-main">
+        <div class="bg" id="bg"></div>
+        <div class="hd-info"><b id="hc"></b><span id="hi"></span><span id="hv"></span></div>
+        <div class="ov" id="ob"><small>OVR</small><span id="ho">0</span></div>
+      </div>
+      <div class="hd-foot">
+        <span class="chip" id="ct"></span>
+        <span class="chip" id="cn"></span>
+        <button class="thbtn" id="mu" type="button" aria-label="Sonido">🔊</button>
+        <button class="thbtn" id="th2" type="button" aria-label="Cambiar tema">🌓</button>
+      </div>
+    </div>
+    <div class="ms" id="ms" aria-label="Hitos de la carrera"></div>
+    <div class="rel" id="rel">
+      <div class="rel-i"><span>DT</span><b id="rd">50</b><div class="rb"><i id="rbd"></i></div></div>
+      <div class="rel-i"><span>Hinchada</span><b id="rh">50</b><div class="rb"><i id="rhb"></i></div></div>
+      <div class="rel-i"><span>Prensa</span><b id="rp2">50</b><div class="rb"><i id="rpb"></i></div></div>
+      <div class="rel-i"><span>Dirigencia</span><b id="rdir">50</b><div class="rb"><i id="rdirb"></i></div></div>
+    </div>
+    <div class="ctr" id="ctrBox" aria-label="Contrato actual">
+      <span>Sueldo<b id="cwage">—</b></span>
+      <span>Contrato<b id="cyears">—</b></span>
+      <span>Cláusula<b id="cclause">—</b></span>
+    </div>
+    <div class="r h" id="hr">
+      <span>EDAD</span><span>CLUB</span><span>OVR</span><span>PJ</span><span id="hg">G</span><span id="ha">A</span><span id="hx" hidden></span>
+    </div>
+    <div id="rw"></div>
+    <div id="dc"></div>
+  </div>
+
+  <div id="en" hidden>
+    <div class="lb" id="lb"></div>
+    <p class="s" id="sb" style="text-align:center"></p>
+    <p class="s" id="gl" style="text-align:center;font-weight:700"></p>
+    <p class="s" id="ep" style="text-align:center;font-style:italic"></p>
+    <div class="sm" id="sm"></div>
+    <div class="pm" id="pm"></div>
+    <canvas id="crd" width="1080" height="1080" tabindex="0" role="button" aria-label="Ver tarjeta de carrera en grande" style="width:100%;height:auto;border-radius:20px;margin:12px 0;border:1px solid var(--bd);display:block;cursor:zoom-in"></canvas>
+    <p class="s" style="text-align:center;font-size:12px;margin:-4px 0 8px">Tocá la tarjeta para verla en grande.</p>
+    <p class="s" id="fileNote" hidden style="text-align:center;font-size:12px">Para incluir escudos y trofeos en la tarjeta descargada, abrí el juego con un servidor local (por ejemplo <b>npx serve .</b>).</p>
+    <button class="pr" id="sh" type="button">Compartir resumen</button>
+    <button class="pr" id="dl" type="button" style="background:var(--card);color:var(--tx);border:1px solid var(--bd)">⬇️ Descargar tarjeta</button>
+    <button class="pr" id="rp" type="button" style="background:var(--card);color:var(--tx);border:1px solid var(--bd)">Volver a jugar</button>
+    <button class="pr" id="hfe" type="button" style="background:var(--card);color:var(--tx);border:1px solid var(--bd)">🏆 Salón de la Fama</button>
+    <p class="s" id="msg" style="text-align:center;margin-top:10px"></p>
+  </div>
+
+  <div id="zoom" hidden>
+    <img id="zoomImg" alt="Tarjeta de carrera ampliada">
+    <button id="zoomClose" type="button" aria-label="Cerrar vista ampliada">✕ Cerrar</button>
+  </div>
+
+  <div id="hf" hidden>
+    <h1>🏆 Salón</h1>
+    <p class="s">Tus mejores carreras guardadas en este dispositivo.</p>
+    <select id="hfFilter" aria-label="Ordenar salón de la fama">
+      <option value="s">Ordenar por puntaje</option>
+      <option value="g">Ordenar por goles</option>
+      <option value="t">Ordenar por títulos</option>
+      <option value="peak">Ordenar por OVR pico</option>
+    </select>
+    <div id="hfList"></div>
+    <button class="pr" id="hfBack" type="button">Volver</button>
+    <button class="pr" id="hfClear" type="button" style="background:var(--card);color:var(--tx);border:1px solid var(--bd)">Borrar historial</button>
+  </div>
+</div>
+<div id="cf" aria-hidden="true"></div>
+<script src="leagues.js?v=7"></script>
+<script src="data.js?v=7"></script>
+<script src="game.js?v=7"></script>
+</body>
+</html>
