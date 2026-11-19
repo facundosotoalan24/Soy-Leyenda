@@ -397,7 +397,7 @@ Argentina, Brasil, Uruguay, España, Francia, Inglaterra, Alemania, Italia, Port
 - **Alcance**: `reach` sube a 0.65 para 79+, así un jugador de un club chico puede recibir a los gigantes.
 - **Exterior**: más probabilidad para 79+ (+18 %) y 85+ (+10 %).
 - **78 o menos**: sigue limitado a un tier de salto; recibe clubes grandes de tier 3 pero no la élite.
-- **Cache**: `index.html` carga `styles.css`, `leagues.js`, `data.js` y `game.js` con `?v=11` para evitar que el navegador use versiones viejas.
+- **Cache**: `index.html` carga `styles.css`, `leagues.js`, `data.js` y `game.js` con `?v=12` para evitar que el navegador use versiones viejas.
 
 ## Fase 7 aplicada — Rasgos nuevos
 
@@ -422,7 +422,9 @@ Argentina, Brasil, Uruguay, España, Francia, Inglaterra, Alemania, Italia, Port
 ### Mercado de pases (Fase C)
 
 - `panel()` detecta ofertas cuando alguna opción tiene `club` y `tier`; en ese caso agrega la clase `.dec.market`, el rótulo "MERCADO DE PASES" y convierte cada opción en una tarjeta `.off-card`.
-- Cada tarjeta muestra: escudo real, nombre del club, pastilla de tier (`TN[tier]`), descripción sin el sueldo repetido, sueldo resaltado en verde (`.off-wage`) y una llamada a la acción (`.off-cta`).
+- Cada tarjeta muestra: escudo real, nombre del club, pastilla de categoría (`clubLabel(x)`), descripción sin el sueldo repetido, sueldo resaltado en verde (`.off-wage`) y una llamada a la acción (`.off-cta`).
+- `clubLabel(x)` usa la **división** del club: en segunda muestra «Segunda» o «Grande en segunda» (`k >= .7`), nunca «Primera»; en primera usa `TN[x.tier]`. `TN` se renombró a `["Ascenso","Segunda","Primera","Club grande","Élite mundial"]`, así que desaparece la etiqueta «Europa» para clubes sudamericanos (Vélez ahora es «Club grande», Instituto «Primera» y Chacarita «Segunda»).
+- `tierOf(k,div)` sigue siendo numérico e intacto para no alterar ofertas, expectativas (`EX`) y límites de edad (`AM`); sólo cambian las etiquetas visibles.
 - El sueldo se toma del `€…K/sem` dentro de `x.s` o del campo `w`, que ahora incluyen `mk()`, la renovación, la oferta saudí y las ofertas iniciales de `go()`.
 - La opción de retiro se mantiene como tarjeta `.retire` en rojo para no romper el flujo.
 - Las opciones que no son ofertas (eventos, pretemporada, lesiones, negociación, desafíos) siguen con el botón de texto de siempre.
@@ -435,11 +437,11 @@ Argentina, Brasil, Uruguay, España, Francia, Inglaterra, Alemania, Italia, Port
 
 ### Goles y asistencias por posición
 
-- Nuevas tasas por partido en `POS` (`[nombre, goles, asistencias, icono]`):
-  - Central `.03 / .015`, laterales `.02 / .09`, Pivote `.04 / .12`.
-  - **Mediocampista `.12 / .22`**, **Enganche `.23 / .36`**, Extremo `.2 / .18`, Delantero `.45 / .12`.
-- `season()` aplica además un factor de nivel `off = clamp(.9 + (OVR-65)/70, .8, 1.4)` a goles y asistencias, tanto de club como de selección. Un enganche elite deja de tener números de defensor.
-- Referencia con OVR 88–94 y ~830 PJ: lateral 76 asistencias/600, mediocampista 192/600, enganche 312/600 (antes el mediocampista estaba en ~65/600).
+- Tasas definitivas por partido en `POS` (`[nombre, goles, asistencias, icono]`), basadas en referencias reales (StatMuse: Bruno Fernandes ~0,50 asistencias/partido en 2019-20; Lampard 36 G+A en 2009-10; Wikipedia 2023-24 Premier League para contexto de titulares):
+  - Central `.03 / .02`, laterales `.02 / .10`, Pivote `.05 / .16`.
+  - **Mediocampista `.16 / .30`** (~8-10 G y 12-16 A por temporada), **Enganche `.28 / .45`** (~15-20 G y 20-28 A), Extremo `.24 / .22`, Delantero `.48 / .14`.
+- `season()` aplica además un factor de nivel `off = clamp(.75 + (OVR-60)/45, .7, 1.7)` a goles y asistencias, tanto de club como de selección. El escalado a partir de OVR 80 es más fuerte: un mediocampista de 88+ ya no tiene números de defensor.
+- Referencia previa con OVR 88–94 y ~830 PJ: lateral 76 asistencias/600, mediocampista 192/600, enganche 312/600 (antes el mediocampista estaba en ~65/600). Con el nuevo escalado el mediocampista sube a ~265/600 y el enganche a ~400/600.
 - `continueRun()` migra partidas guardadas: si `S.p` es un array viejo, se reemplaza por el objeto de `POS` correspondiente para que usen las tasas nuevas.
 - Las acciones de pretemporada de goles/asistencias y el rasgo *Goleador nato* se aplican después sobre estas tasas.
 

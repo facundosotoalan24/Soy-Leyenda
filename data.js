@@ -1,12 +1,14 @@
 /* ===== DATOS DEL JUEGO ===== */
 
 /* Tasas por partido: [nombre, goles, asistencias, icono].
-   El mediocampo y el enganche deben diferenciarse claramente de la defensa. */
-const POS=[["Arquero",0,.004,"🧤"],["Central",.03,.015,"🛡️"],["Lateral izquierdo",.02,.09,"◀️"],["Lateral derecho",.02,.09,"▶️"],["Pivote",.04,.12,"⚙️"],["Mediocampista",.12,.22,"🎯"],["Enganche",.23,.36,"🎩"],["Extremo",.2,.18,"⚡"],["Delantero",.45,.12,"🔥"]];
+   Referencias reales: un mediocampista titular ronda 8-10 G y 12-16 A por temporada;
+   un enganche elite (De Bruyne, Lampard, Messi) llega a 15-20 G y 20-28 A. */
+const POS=[["Arquero",0,.004,"🧤"],["Central",.03,.02,"🛡️"],["Lateral izquierdo",.02,.10,"◀️"],["Lateral derecho",.02,.10,"▶️"],["Pivote",.05,.16,"⚙️"],["Mediocampista",.16,.30,"🎯"],["Enganche",.28,.45,"🎩"],["Extremo",.24,.22,"⚡"],["Delantero",.48,.14,"🔥"]];
 
 const CL=[[["Brown de Adrogué",.4],["Atlanta",.4],["Nueva Chicago",.45],["Almirante Brown",.35],["Ferro",.4]],[["Platense",.4],["Argentinos",.5],["Lanús",.55],["Huracán",.5],["Talleres",.6]],[["Independiente",.65],["Racing",.7],["San Lorenzo",.6],["Boca",.85],["River",.9]],[["Benfica",.8],["Ajax",.75],["Sevilla",.6],["Atlético de Madrid",.7],["Inter",.8]],[["Real Madrid",1],["Barcelona",.9],["Man. City",1],["Bayern",.95]]];
 const CA=[["Al-Hilal",1],["Al-Nassr",.8],["Al-Ittihad",.7]];
-const TN=["Ascenso","Primera","Club grande","Europa","Élite mundial"],EX=[0,55,65,72,80],AM=[41,39,36,34,32];
+/* Etiquetas neutras: la categoria no depende de la confederacion (Velez no es "Europa"). */
+const TN=["Ascenso","Segunda","Primera","Club grande","Élite mundial"],EX=[0,55,65,72,80],AM=[41,39,36,34,32];
 const TT=[[["Torneo de Ascenso",.25]],[["Liga Profesional",.12],["Copa de la Liga",.12],["Copa Argentina",.1],["Copa Sudamericana",.1]],[["Liga Profesional",.22],["Copa de la Liga",.18],["Copa Argentina",.16],["Copa Libertadores",.14]],[["Liga europea",.28],["Copa nacional",.24],["Europa League",.12],["Champions League",.08]],[["Liga europea",.45],["Copa nacional",.33],["Champions League",.24]]];
 const TA=[["Liga de Arabia",.4],["Copa de Arabia",.25]];
 

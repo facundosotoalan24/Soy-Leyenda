@@ -448,7 +448,7 @@ function season(){
   let pj=Math.round(38*s*R(.85,1)*(inj?(trIs("Resiliente")?Math.min(1,inj[1]+.2):inj[1]):1)*(pre.pj||1));
   if(a<18)pj=Math.round(pj*.6);
   // El nivel también pesa: un enganche elite genera muchas más ocasiones que uno de plantel.
-  const off=C(.9+(S.ovr-65)/70,.8,1.4);
+  const off=C(.75+(S.ovr-60)/45,.7,1.7);
   const g=Math.round(pj*S.p[1]*R(.6,1.5)*(pre.g||1)*(S.gf||1)*off),as=Math.round(pj*S.p[2]*R(.6,1.5)*(pre.a||1)*(S.af||1)*off);
   const gkm=S.p[0]=="Arquero",rel=S.ovr-Math.max(ex,45),gkF=pre.gk||1;
   let pen=0,mm=0,vc=0;
@@ -556,6 +556,14 @@ function note(t,ic){
   $("#rw").appendChild(n);scrollEnd(n);
 }
 
+/* La categoria visible depende de la division del club, no de su confederacion.
+   Asi Velez nunca aparece como "Europa" y Chacarita no aparece como "Primera". */
+function clubLabel(x){
+  if(!x)return "";
+  if(x.div===2)return x.k>=.7?"Grande en segunda":(x.k>=.46?TN[1]:TN[0]);
+  return TN[x.tier]!==undefined?TN[x.tier]:"";
+}
+
 function panel(txt,opts,fn){
   const d=$("#dc");
   const market=opts.some(x=>x.club&&x.tier!==undefined&&!x.r);
@@ -572,7 +580,8 @@ function panel(txt,opts,fn){
     if(card&&x.club){
       const head=document.createElement("span");head.className="off-head";
       const nm=document.createElement("b");nm.textContent=x.club;head.appendChild(nm);
-      if(TN[x.tier]!==undefined){const tp=document.createElement("span");tp.className="tier-pill t"+x.tier;tp.textContent=TN[x.tier];head.appendChild(tp)}
+      const label=clubLabel(x);
+      if(label){const tp=document.createElement("span");tp.className="tier-pill t"+x.tier;tp.textContent=label;head.appendChild(tp)}
       const raw=x.s||"",wm=raw.match(/€[\d.,]+K\/sem/);
       const s=document.createElement("small");s.className="off-desc";
       s.textContent=wm?raw.replace(wm[0],"").replace(/\s*·\s*$/,""):raw;
