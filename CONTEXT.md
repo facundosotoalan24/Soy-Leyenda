@@ -397,7 +397,7 @@ Argentina, Brasil, Uruguay, España, Francia, Inglaterra, Alemania, Italia, Port
 - **Alcance**: `reach` sube a 0.65 para 79+, así un jugador de un club chico puede recibir a los gigantes.
 - **Exterior**: más probabilidad para 79+ (+18 %) y 85+ (+10 %).
 - **78 o menos**: sigue limitado a un tier de salto; recibe clubes grandes de tier 3 pero no la élite.
-- **Cache**: `index.html` carga `styles.css`, `leagues.js`, `data.js` y `game.js` con `?v=14` para evitar que el navegador use versiones viejas.
+- **Cache**: `index.html` carga `styles.css`, `leagues.js`, `data.js` y `game.js` con `?v=15` para evitar que el navegador use versiones viejas.
 
 ## Fase 7 aplicada — Rasgos nuevos
 
@@ -417,10 +417,11 @@ Argentina, Brasil, Uruguay, España, Francia, Inglaterra, Alemania, Italia, Port
 - **Flujo de inicio**: tocar una posición la marca con `aria-pressed` y actualiza la vista previa; `#startBtn` llama a `go(selPos)`. Antes cada posición iniciaba la partida directamente.
 - **Compatibilidad**: `Mi Carrera.html` sigue intacto; los selectores y eventos del juego (`#nm`, `#nat`, `#md`, etc.) mantienen sus IDs.
 
-## Fase 11 aplicada — Cancha horizontal
+## Fase 11 aplicada — Cancha según referencia
 
-- Los botones de `#ps` siguen el orden de `POS` (0 a 8) pero ahora se ubican de **izquierda a derecha**: arquero en el extremo izquierdo y delantero en el derecho, con las filas alternadas para que no se pisen en pantallas chicas.
-- `.pitch::after` ya no dibuja las dos líneas verticales: ahora es un **círculo central** con un punto en el medio. En móvil se reduce a 76 px y los botones a 58 px de ancho.
+- Los botones de `#ps` siguen el orden de `POS` y se ubican en un esquema **vertical** como la captura de referencia: `POR` abajo, luego `DFC` con `LI`/`LD` a los lados, `MCD`, `MC`, `MCO` y `DC` arriba, con `EXT` en el costado superior.
+- Abreviaturas en la cancha (`POS_SHORT`): `POR`, `DFC`, `LI`, `LD`, `MCD`, `MC`, `MCO`, `EXT`, `DC`. El nombre completo sigue en `title` y `aria-label`, y la tarjeta de vista previa lo muestra sin abreviar.
+- `.pitch::after` ya no dibuja las dos líneas verticales: ahora es un **círculo central** con un punto en el medio. La cancha mide 300 px de alto (280 px en móvil).
 
 ## Fase 10 aplicada — Clubes que no renuevan
 
