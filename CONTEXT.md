@@ -397,7 +397,7 @@ Argentina, Brasil, Uruguay, España, Francia, Inglaterra, Alemania, Italia, Port
 - **Alcance**: `reach` sube a 0.65 para 79+, así un jugador de un club chico puede recibir a los gigantes.
 - **Exterior**: más probabilidad para 79+ (+18 %) y 85+ (+10 %).
 - **78 o menos**: sigue limitado a un tier de salto; recibe clubes grandes de tier 3 pero no la élite.
-- **Cache**: `index.html` carga `styles.css`, `leagues.js`, `data.js` y `game.js` con `?v=19` para evitar que el navegador use versiones viejas.
+- **Cache**: `index.html` carga `styles.css`, `leagues.js`, `data.js` y `game.js` con `?v=20` para evitar que el navegador use versiones viejas.
 
 ## Fase 7 aplicada — Rasgos nuevos
 
@@ -420,7 +420,7 @@ Argentina, Brasil, Uruguay, España, Francia, Inglaterra, Alemania, Italia, Port
 ## Fase 14 aplicada — Guía «Cómo jugar»
 
 - Se agregó el botón `#helpBtn` («❓ Cómo jugar») dentro de `.setup`, después del selector de tema: en el modo libre queda al lado de «Tema» y debajo de «Código de semilla».
-- El botón abre un modal `#help` (`role="dialog"`, `aria-modal`, título y descripción enlazados) con siete secciones en español: creación de jugador y leyenda de posiciones, inicio/continuar/salón, pantalla de juego, temporadas/pretemporada/decisiones, ofertas/contratos/préstamos, copas/selección/hitos y tarjeta/final.
+- El botón abre un modal `#help` (`role="dialog"`, `aria-modal`, título y descripción enlazados) con ocho secciones en español: creación de jugador y leyenda de posiciones, inicio/continuar/salón, pantalla de juego, temporadas/pretemporada/decisiones, **los 8 rasgos con sus efectos exactos**, ofertas/contratos/préstamos, copas/selección/hitos y tarjeta/final.
 - El modal se cierra con «Entendido», con la ✕, haciendo clic fuera y con `Escape`; el foco va al botón de cierre al abrir, vuelve a «Cómo jugar» al cerrar y `Tab` queda confinado entre «✕» y «Entendido». Bloquea el scroll de fondo con `body.help-open`.
 - Estilos nuevos: `.setup .help-btn` y `.help-card`, `.help-head`, `.help-body`, `.help-sec`, `.help-ok` con `#help[hidden]{display:none}`.
 
