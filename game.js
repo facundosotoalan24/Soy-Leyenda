@@ -182,7 +182,8 @@ function continueRun(){
   S.gf=S.gf||1;S.af=S.af||1;S.rs=S.rs||0;
   // Las partidas viejas guardaron POS como array; actualizar a las tasas nuevas.
   const posName=Array.isArray(S.p)?S.p[0]:S.p;
-  S.p=POS.find(p=>p[0]===posName)||POS[8];
+  const posNow=posName==="Extremo"?"Extremo izquierdo":posName; // antes era generico
+  S.p=POS.find(p=>p[0]===posNow)||POS[8];
   if(!S.lgId){
     S.lgId=NAT_LEAGUE[S.nt&&S.nt.n]||"ARG";
     S.div=S.tier>=3?1:2;
@@ -992,7 +993,7 @@ function updPreview(){
   $("#pvNat").textContent=nt.n;
   $("#pvCrest").textContent=ini;
 }
-const POS_SHORT={Arquero:"POR",Central:"DFC","Lateral izquierdo":"LI","Lateral derecho":"LD",Pivote:"MCD",Mediocampista:"MC",Enganche:"MCO",Extremo:"EXT",Delantero:"DC"};
+const POS_SHORT={Arquero:"POR",Central:"DFC","Lateral izquierdo":"LI","Lateral derecho":"LD",Pivote:"MCD",Mediocampista:"MC",Enganche:"MCO","Extremo izquierdo":"EI","Extremo derecho":"ED",Delantero:"DC"};
 POS.forEach((p,i)=>{
   const b=document.createElement("button");
   b.type="button";b.className="pos pos-"+i;b.dataset.pos=i;

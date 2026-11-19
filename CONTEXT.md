@@ -397,7 +397,7 @@ Argentina, Brasil, Uruguay, España, Francia, Inglaterra, Alemania, Italia, Port
 - **Alcance**: `reach` sube a 0.65 para 79+, así un jugador de un club chico puede recibir a los gigantes.
 - **Exterior**: más probabilidad para 79+ (+18 %) y 85+ (+10 %).
 - **78 o menos**: sigue limitado a un tier de salto; recibe clubes grandes de tier 3 pero no la élite.
-- **Cache**: `index.html` carga `styles.css`, `leagues.js`, `data.js` y `game.js` con `?v=15` para evitar que el navegador use versiones viejas.
+- **Cache**: `index.html` carga `styles.css`, `leagues.js`, `data.js` y `game.js` con `?v=16` para evitar que el navegador use versiones viejas.
 
 ## Fase 7 aplicada — Rasgos nuevos
 
@@ -413,14 +413,16 @@ Argentina, Brasil, Uruguay, España, Francia, Inglaterra, Alemania, Italia, Port
 - **Fondo y cristal**: `body::before` combina luces radiales con franjas de césped; `#st` usa `backdrop-filter: blur(16px)` y panel translúcido.
 - **Badge de OVR**: `head()` ya no pone un color plano con `oc()`; setea `#ob.dataset.lvl` (`base`, `bueno`, `pro`, `elite`, `leyenda`) y CSS aplica gradientes metálicos y glow.
 - **Barras de relación**: `relBar()` usa gradientes verde/ámbar/rojo en vez de colores lisos.
-- **Home (Fase B)**: tarjeta de jugador en vivo (`#preview`) con nombre, posición, nacionalidad e iniciales; selector táctico con 9 botones posicionados sobre una cancha CSS (`#ps .pos-0` … `.pos-8`).
+- **Home (Fase B)**: tarjeta de jugador en vivo (`#preview`) con nombre, posición, nacionalidad e iniciales; selector táctico con 11 botones posicionados sobre una cancha CSS (`#ps .pos-0` … `.pos-10`).
 - **Flujo de inicio**: tocar una posición la marca con `aria-pressed` y actualiza la vista previa; `#startBtn` llama a `go(selPos)`. Antes cada posición iniciaba la partida directamente.
 - **Compatibilidad**: `Mi Carrera.html` sigue intacto; los selectores y eventos del juego (`#nm`, `#nat`, `#md`, etc.) mantienen sus IDs.
 
-## Fase 11 aplicada — Cancha según referencia
+## Fase 11 aplicada — Cancha de 11 jugadores según referencia
 
-- Los botones de `#ps` siguen el orden de `POS` y se ubican en un esquema **vertical** como la captura de referencia: `POR` abajo, luego `DFC` con `LI`/`LD` a los lados, `MCD`, `MC`, `MCO` y `DC` arriba, con `EXT` en el costado superior.
-- Abreviaturas en la cancha (`POS_SHORT`): `POR`, `DFC`, `LI`, `LD`, `MCD`, `MC`, `MCO`, `EXT`, `DC`. El nombre completo sigue en `title` y `aria-label`, y la tarjeta de vista previa lo muestra sin abreviar.
+- La cancha del inicio es más angosta (`.pitch` con `max-width:360px` y `margin-inline:auto`) y muestra **11 posiciones** en un esquema **vertical** como la captura: `POR` abajo; dos `DFC` con `LI`/`LD` a los lados; `MCD`, `MC`, `MCO` subiendo; y `EI`, `DC`, `ED` arriba.
+- Se mantuvieron los índices `0-8` de `POS` para no romper partidas guardadas: «Extremo» pasó a «Extremo izquierdo» (índice 7), se agregó un segundo «Central» (índice 9) y «Extremo derecho» (índice 10). `continueRun()` migra guardados viejos con «Extremo» a «Extremo izquierdo».
+- Abreviaturas en la cancha (`POS_SHORT`): `POR`, `DFC`, `LI`, `LD`, `MCD`, `MC`, `MCO`, `EI`, `ED`, `DC`. El nombre completo sigue en `title` y `aria-label`, y la tarjeta de vista previa lo muestra sin abreviar.
+- `selPos=8` sigue siendo «Delantero» y tanto `go(selPos)` como el fallback de `continueRun()` conservan `POS[8]`.
 - `.pitch::after` ya no dibuja las dos líneas verticales: ahora es un **círculo central** con un punto en el medio. La cancha mide 300 px de alto (280 px en móvil).
 
 ## Fase 10 aplicada — Clubes que no renuevan
@@ -452,7 +454,7 @@ Argentina, Brasil, Uruguay, España, Francia, Inglaterra, Alemania, Italia, Port
 
 - Tasas definitivas por partido en `POS` (`[nombre, goles, asistencias, icono]`), basadas en referencias reales (StatMuse: Bruno Fernandes ~0,50 asistencias/partido en 2019-20; Lampard 36 G+A en 2009-10; Wikipedia 2023-24 Premier League para contexto de titulares):
   - Central `.03 / .02`, laterales `.02 / .10`, Pivote `.05 / .16`.
-  - **Mediocampista `.16 / .30`** (~8-10 G y 12-16 A por temporada), **Enganche `.28 / .45`** (~15-20 G y 20-28 A), Extremo `.24 / .22`, Delantero `.48 / .14`.
+  - **Mediocampista `.16 / .30`** (~8-10 G y 12-16 A por temporada), **Enganche `.28 / .45`** (~15-20 G y 20-28 A), Extremo izquierdo `.24 / .22`, Extremo derecho `.24 / .22`, Delantero `.48 / .14`.
 - `season()` aplica además un factor de nivel `off = clamp(.75 + (OVR-60)/45, .7, 1.7)` a goles y asistencias, tanto de club como de selección. El escalado a partir de OVR 80 es más fuerte: un mediocampista de 88+ ya no tiene números de defensor.
 - Referencia previa con OVR 88–94 y ~830 PJ: lateral 76 asistencias/600, mediocampista 192/600, enganche 312/600 (antes el mediocampista estaba en ~65/600). Con el nuevo escalado el mediocampista sube a ~265/600 y el enganche a ~400/600.
 - `continueRun()` migra partidas guardadas: si `S.p` es un array viejo, se reemplaza por el objeto de `POS` correspondiente para que usen las tasas nuevas.

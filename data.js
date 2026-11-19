@@ -3,7 +3,8 @@
 /* Tasas por partido: [nombre, goles, asistencias, icono].
    Referencias reales: un mediocampista titular ronda 8-10 G y 12-16 A por temporada;
    un enganche elite (De Bruyne, Lampard, Messi) llega a 15-20 G y 20-28 A. */
-const POS=[["Arquero",0,.004,"🧤"],["Central",.03,.02,"🛡️"],["Lateral izquierdo",.02,.10,"◀️"],["Lateral derecho",.02,.10,"▶️"],["Pivote",.05,.16,"⚙️"],["Mediocampista",.16,.30,"🎯"],["Enganche",.28,.45,"🎩"],["Extremo",.24,.22,"⚡"],["Delantero",.48,.14,"🔥"]];
+/* 11 posiciones: se mantienen los indices 0-8 y se agregan el segundo DFC y el ED. */
+const POS=[["Arquero",0,.004,"🧤"],["Central",.03,.02,"🛡️"],["Lateral izquierdo",.02,.10,"◀️"],["Lateral derecho",.02,.10,"▶️"],["Pivote",.05,.16,"⚙️"],["Mediocampista",.16,.30,"🎯"],["Enganche",.28,.45,"🎩"],["Extremo izquierdo",.24,.22,"⚡"],["Delantero",.48,.14,"🔥"],["Central",.03,.02,"🛡️"],["Extremo derecho",.24,.22,"⚡"]];
 
 const CL=[[["Brown de Adrogué",.4],["Atlanta",.4],["Nueva Chicago",.45],["Almirante Brown",.35],["Ferro",.4]],[["Platense",.4],["Argentinos",.5],["Lanús",.55],["Huracán",.5],["Talleres",.6]],[["Independiente",.65],["Racing",.7],["San Lorenzo",.6],["Boca",.85],["River",.9]],[["Benfica",.8],["Ajax",.75],["Sevilla",.6],["Atlético de Madrid",.7],["Inter",.8]],[["Real Madrid",1],["Barcelona",.9],["Man. City",1],["Bayern",.95]]];
 const CA=[["Al-Hilal",1],["Al-Nassr",.8],["Al-Ittihad",.7]];
