@@ -800,7 +800,7 @@ async function drawCard(){
   sh.addColorStop(0,"rgba(255,255,255,.35)");sh.addColorStop(1,"rgba(255,255,255,0)");
   ctx.fillStyle=sh;ctx.fillRect(0,0,W,H);
 
-  ctx.fillStyle="rgba(255,255,255,.8)";ctx.font="700 30px system-ui,sans-serif";ctx.fillText("MI CARRERA",60,90);
+  ctx.fillStyle="rgba(255,255,255,.8)";ctx.font="700 30px system-ui,sans-serif";ctx.fillText("SOY LEYENDA",60,90);
 
   ctx.fillStyle="#fff";ctx.font="900 78px system-ui,sans-serif";
   ctx.fillText(S.n.length>15?S.n.slice(0,15)+"…":S.n,60,190);
@@ -948,7 +948,7 @@ $("#hfFilter").onchange=renderHf;
 $("#hfClear").onclick=()=>{if(confirm("¿Borrar todo el historial?")){try{localStorage.removeItem("mc")}catch(e){}renderHf();hist()}};
 $("#dl").onclick=()=>{
   const cv=$("#crd");
-  const name="mi-carrera-"+(S.n||"jugador").replace(/[^\w-]+/g,"_")+".png";
+  const name="soy-leyenda-"+(S.n||"jugador").replace(/[^\w-]+/g,"_")+".png";
   const save=url=>{
     const a=document.createElement("a");
     a.href=url;a.download=name;a.rel="noopener";

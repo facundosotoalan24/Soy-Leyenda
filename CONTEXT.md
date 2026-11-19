@@ -1,4 +1,4 @@
-# Contexto del proyecto — "Mi Carrera"
+# Contexto del proyecto — "Soy Leyenda" (antes "Mi Carrera")
 
 ## Qué es
 
@@ -397,7 +397,7 @@ Argentina, Brasil, Uruguay, España, Francia, Inglaterra, Alemania, Italia, Port
 - **Alcance**: `reach` sube a 0.65 para 79+, así un jugador de un club chico puede recibir a los gigantes.
 - **Exterior**: más probabilidad para 79+ (+18 %) y 85+ (+10 %).
 - **78 o menos**: sigue limitado a un tier de salto; recibe clubes grandes de tier 3 pero no la élite.
-- **Cache**: `index.html` carga `styles.css`, `leagues.js`, `data.js` y `game.js` con `?v=8` para evitar que el navegador use versiones viejas.
+- **Cache**: `index.html` carga `styles.css`, `leagues.js`, `data.js` y `game.js` con `?v=9` para evitar que el navegador use versiones viejas.
 
 ## Fase 7 aplicada — Rasgos nuevos
 
@@ -406,6 +406,12 @@ Argentina, Brasil, Uruguay, España, Francia, Inglaterra, Alemania, Italia, Port
 - **Resiliente**: `S.rs=1`; en `season()` saca la lesión más grave del pool (máximo 5 meses), reduce a la mitad la caída de OVR y suma `.2` al factor de partidos jugados.
 - **Helper `trIs(n)`**: reemplaza las comparaciones directas con `S.tr[0]`, usadas por `Líder` y los rasgos nuevos.
 - **Compatibilidad**: `continueRun()` inicializa `gf=1`, `af=1` y `rs=0` en partidas guardadas antes de este cambio.
+
+## Identidad
+
+- El título de la pestaña y del inicio es **Soy Leyenda** (`index.html`).
+- La tarjeta de despedida imprime **SOY LEYENDA** y se descarga como `soy-leyenda-<nombre>.png` (`game.js`).
+- `Mi Carrera.html` se conserva intacto como versión original de referencia.
 
 ## Publicación en GitHub Pages
 

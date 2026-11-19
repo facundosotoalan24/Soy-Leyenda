@@ -1,4 +1,4 @@
-# Mi Carrera — Soy Leyenda
+# Soy Leyenda
 
 Simulador de carrera futbolística en español, jugable directamente en el navegador.
 
