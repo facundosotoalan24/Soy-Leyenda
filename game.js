@@ -176,6 +176,7 @@ function continueRun(){
   S.rel=S.rel||{dt:50,hin:50,pre:50,dir:50};
   S.rel.dir=S.rel.dir??50;
   S.mile=S.mile||[];
+  S.rejected=S.rejected||[]; // clubes que no quisieron renovarte: no vuelven a ofrecerte
   S.ag=S.ag||0;S.agOff=S.agOff||0;S.agB=S.agB||0;S.injured=null;S.home=S.home||null;S.ra=S.ra||0;
   S.money=S.money||0;S.free=!!S.free;S.chDone=!!S.chDone;S.pre=S.pre||null;S.preAge=S.preAge||0;
   S.gf=S.gf||1;S.af=S.af||1;S.rs=S.rs||0;
@@ -299,7 +300,7 @@ function go(i){
   seedUp();
   const chMode=$("#md").value==="1",chSel=chMode?+$("#ch").value||0:-1,agSel=+$("#ag").value||0;
   const nt=NT[+$("#nat").value||0],lgId=NAT_LEAGUE[nt.n]||"ARG",L0=leagueOf(lgId)||LEAGUES[0];
-  S={p:POS[i],f:Math.max(1,parseInt($("#fq").value)||1),nt:nt,n:$("#nm").value.trim()||"Tu jugador",age:16,ovr:Math.round(R(44,54)),pot:Math.round(R(70,93)),tier:0,club:"",k:.4,tl:[],lgId:lgId,div:2,lg:L0.d2,cp:L0.cup,slot:null,pos:0,pj:0,g:0,a:0,t:0,caps:0,cg:0,ca:0,peak:0,pv:0,pal:[],since:0,asked:0,ra:0,cj:{},gk:{p:0,m:0,v:0},seen:[],gb:0,ij:.08,mt:+$("#mt").value,mod:0,spd:+$("#sp").value,mile:[],rel:{dt:50,hin:50,pre:50,dir:50},ag:agSel,agOff:AGENTS[agSel].off,agB:AGENTS[agSel].bonus,injured:null,ch:chSel,ctr:null,money:0,free:false,chDone:false,pre:null,preAge:0};
+  S={p:POS[i],f:Math.max(1,parseInt($("#fq").value)||1),nt:nt,n:$("#nm").value.trim()||"Tu jugador",age:16,ovr:Math.round(R(44,54)),pot:Math.round(R(70,93)),tier:0,club:"",k:.4,tl:[],lgId:lgId,div:2,lg:L0.d2,cp:L0.cup,slot:null,pos:0,pj:0,g:0,a:0,t:0,caps:0,cg:0,ca:0,peak:0,pv:0,pal:[],since:0,asked:0,ra:0,cj:{},gk:{p:0,m:0,v:0},seen:[],rejected:[],gb:0,ij:.08,mt:+$("#mt").value,mod:0,spd:+$("#sp").value,mile:[],rel:{dt:50,hin:50,pre:50,dir:50},ag:agSel,agOff:AGENTS[agSel].off,agB:AGENTS[agSel].bonus,injured:null,ch:chSel,ctr:null,money:0,free:false,chDone:false,pre:null,preAge:0};
   trait();
   S.rel.dt=C(S.rel.dt+AGENTS[agSel].rel,0,100);
   prevOvr=S.ovr;lastVal=val();
@@ -657,19 +658,22 @@ function offer(){
   };
   const o=[];
   const expiring=!!(S.ctr&&!S.free&&S.ctr.y<=1);
-  const canRenew=S.ovr>=ex-8&&(expiring||(S.free?(S.rel.dir??50)>=45:(S.rel.dt>=25||(S.rel.dir??50)>=60)));
+  const canRenew=!S.rejected.includes(S.club)&&S.ovr>=ex-8&&(expiring||(S.free?(S.rel.dir??50)>=45:(S.rel.dt>=25||(S.rel.dir??50)>=60)));
+  // Si en una renovación (o al quedar libre) el club no te quiere, queda descartado para siempre.
+  if((expiring||S.free)&&S.club&&!canRenew&&!S.rejected.includes(S.club))S.rejected.push(S.club);
   if(canRenew)o.push({l:(S.free?"Volver a ":"Renovar en ")+S.club,s:(S.free?"Agente libre · ":"")+S.lg+(S.free?"":" · "+contractLine()),w:S.ctr?S.ctr.w:wageOf(S.ovr,S.age,S.pot,S.p&&S.p[0],T,S.k),tier:T,club:S.club,k:S.k,lgId:S.lgId,div:S.div,lg:S.lg,cp:S.cp,tl:S.tl,renew:1});
 
-  const sameCountry=ALL_CLUBS.filter(c=>c.lgId===S.lgId&&c.n!==S.club);
+  const wanted=c=>!!c&&!S.rejected.includes(c.n);
+  const sameCountry=ALL_CLUBS.filter(c=>c.lgId===S.lgId&&c.n!==S.club&&wanted(c));
   const sameDiv=sameCountry.filter(c=>c.div===S.div);
   const otherDiv=sameCountry.filter(c=>c.div!==S.div);
   const has=n=>o.some(x=>x.club===n);
   const add=c=>{if(c&&!has(c.n)){o.push(mk(c));return true}return false};
 
-  const bigPool=ALL_CLUBS.filter(c=>c.n!==S.club&&c.div===1&&c.k>=.78&&c.k>=S.k-.05&&c.k<=S.k+reach&&canJoin(c)&&canMove(c));
+  const bigPool=ALL_CLUBS.filter(c=>wanted(c)&&c.n!==S.club&&c.div===1&&c.k>=.78&&c.k>=S.k-.05&&c.k<=S.k+reach&&canJoin(c)&&canMove(c));
   if(S.ovr>=79&&bigPool.length&&rnd()<(S.ovr>=85?.9:.8))add(pick(bigPool));
 
-  const elitePool=ALL_CLUBS.filter(c=>c.n!==S.club&&c.div===1&&c.k>=.88&&c.k>=S.k-.05&&c.k<=S.k+reach&&canJoin(c)&&canMove(c));
+  const elitePool=ALL_CLUBS.filter(c=>wanted(c)&&c.n!==S.club&&c.div===1&&c.k>=.88&&c.k>=S.k-.05&&c.k<=S.k+reach&&canJoin(c)&&canMove(c));
   if(S.ovr>=79&&elitePool.length&&rnd()<(S.ovr>=85?.75:S.ovr>=82?.55:.35))add(pick(elitePool));
 
   const stepUp=sameDiv.filter(c=>canJoin(c)&&c.k>S.k+.04&&c.k<=S.k+reach);
@@ -684,7 +688,7 @@ function offer(){
   const foreignChance=(S.div===2?.10:.28)+(S.ag===2?.07:0)+(S.ovr>=ex+4?.07:0)+(S.ovr>=79?.18:0)+(S.ovr>=85?.10:0)+(trIs("Nómada")?.12:0);
   if(rnd()<foreignChance){
     const fc=ALL_CLUBS.filter(c=>{
-      if(c.lgId===S.lgId||c.n===S.club||c.div!==1)return false;
+      if(c.lgId===S.lgId||c.n===S.club||!wanted(c)||c.div!==1)return false;
       if(!canJoin(c)||!canMove(c))return false;
       if(c.k>S.k+reach)return false;
       if(c.k<S.k-.15&&S.age<30&&S.ovr>=ex)return false;
@@ -698,13 +702,13 @@ function offer(){
     add(c4);
   }
   if(!o.length){
-    const c5=pick(ALL_CLUBS.filter(c=>c.n!==S.club&&canJoin(c)&&canMove(c)));
+    const c5=pick(ALL_CLUBS.filter(c=>wanted(c)&&c.n!==S.club&&canJoin(c)&&canMove(c)));
     add(c5);
   }
 
   if(S.age>=29&&S.ovr>=60&&S.lgId!=="ARA"){
-    const sa=ALL_CLUBS.filter(c=>c.lgId==="ARA"&&c.div===1&&c.n!==S.club&&c.k<=.74);
-    const ca=sa.length?I(sa):ALL_CLUBS.find(c=>c.lgId==="ARA"&&c.div===1);
+    const sa=ALL_CLUBS.filter(c=>c.lgId==="ARA"&&c.div===1&&wanted(c)&&c.n!==S.club&&c.k<=.74);
+    const ca=sa.length?I(sa):ALL_CLUBS.find(c=>c.lgId==="ARA"&&c.div===1&&wanted(c));
     if(ca&&!has(ca.n)){const ct=tierOf(ca.k,ca.div);o.push({l:"Irte a "+ca.n,s:"Saudi Pro League · contrato millonario",w:wageOf(S.ovr,S.age,S.pot,S.p&&S.p[0],ct,ca.k),tier:ct,club:ca.n,k:ca.k,lgId:ca.lgId,div:ca.div,lg:ca.lg,cp:ca.cp,tl:[]})}
   }
 

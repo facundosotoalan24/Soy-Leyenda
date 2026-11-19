@@ -397,7 +397,7 @@ Argentina, Brasil, Uruguay, España, Francia, Inglaterra, Alemania, Italia, Port
 - **Alcance**: `reach` sube a 0.65 para 79+, así un jugador de un club chico puede recibir a los gigantes.
 - **Exterior**: más probabilidad para 79+ (+18 %) y 85+ (+10 %).
 - **78 o menos**: sigue limitado a un tier de salto; recibe clubes grandes de tier 3 pero no la élite.
-- **Cache**: `index.html` carga `styles.css`, `leagues.js`, `data.js` y `game.js` con `?v=12` para evitar que el navegador use versiones viejas.
+- **Cache**: `index.html` carga `styles.css`, `leagues.js`, `data.js` y `game.js` con `?v=13` para evitar que el navegador use versiones viejas.
 
 ## Fase 7 aplicada — Rasgos nuevos
 
@@ -416,6 +416,13 @@ Argentina, Brasil, Uruguay, España, Francia, Inglaterra, Alemania, Italia, Port
 - **Home (Fase B)**: tarjeta de jugador en vivo (`#preview`) con nombre, posición, nacionalidad e iniciales; selector táctico con 9 botones posicionados sobre una cancha CSS (`#ps .pos-0` … `.pos-8`).
 - **Flujo de inicio**: tocar una posición la marca con `aria-pressed` y actualiza la vista previa; `#startBtn` llama a `go(selPos)`. Antes cada posición iniciaba la partida directamente.
 - **Compatibilidad**: `Mi Carrera.html` sigue intacto; los selectores y eventos del juego (`#nm`, `#nat`, `#md`, etc.) mantienen sus IDs.
+
+## Fase 10 aplicada — Clubes que no renuevan
+
+- `S.rejected` guarda los nombres de los clubes que decidieron no renovarte. Se inicializa en `go()` y `continueRun()` lo migra para partidas guardadas.
+- En `offer()`, cuando el contrato está por vencer o ya quedaste libre y `canRenew` es falso, se agrega `S.club` a `S.rejected`. También se bloquea la opción «Volver a…» si el club ya te había descartado.
+- `wanted(c)` filtra esos clubes de **todos** los generadores de ofertas: mismo país/división, clubes grandes, élite, extranjeros, préstamos, futbolistas saudíes y el fallback final. Así un club que no te renovó no reaparece aunque más tarde hayas firmado con otro.
+- Si el jugador decide irse voluntariamente cuando sí había renovación, el club **no** queda marcado: sólo cuenta el rechazo de la dirigencia.
 
 ## Fase 9 aplicada — Fase C y rebalance ofensivo
 
