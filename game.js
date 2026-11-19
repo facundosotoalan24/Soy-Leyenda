@@ -992,11 +992,13 @@ function updPreview(){
   $("#pvNat").textContent=nt.n;
   $("#pvCrest").textContent=ini;
 }
+const POS_SHORT={Arquero:"Arq.","Lateral izquierdo":"Lateral I","Lateral derecho":"Lateral D",Mediocampista:"Medio"};
 POS.forEach((p,i)=>{
   const b=document.createElement("button");
   b.type="button";b.className="pos pos-"+i;b.dataset.pos=i;
   b.setAttribute("aria-pressed",i===selPos?"true":"false");
-  b.innerHTML="<i>"+p[3]+"</i><span>"+p[0]+"</span>";
+  b.title=p[0];b.setAttribute("aria-label",p[0]);
+  b.innerHTML="<i>"+p[3]+"</i><span>"+(POS_SHORT[p[0]]||p[0])+"</span>";
   b.onclick=()=>selectPos(i);
   $("#ps").appendChild(b);
 });

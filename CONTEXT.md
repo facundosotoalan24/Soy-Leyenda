@@ -397,7 +397,7 @@ Argentina, Brasil, Uruguay, España, Francia, Inglaterra, Alemania, Italia, Port
 - **Alcance**: `reach` sube a 0.65 para 79+, así un jugador de un club chico puede recibir a los gigantes.
 - **Exterior**: más probabilidad para 79+ (+18 %) y 85+ (+10 %).
 - **78 o menos**: sigue limitado a un tier de salto; recibe clubes grandes de tier 3 pero no la élite.
-- **Cache**: `index.html` carga `styles.css`, `leagues.js`, `data.js` y `game.js` con `?v=13` para evitar que el navegador use versiones viejas.
+- **Cache**: `index.html` carga `styles.css`, `leagues.js`, `data.js` y `game.js` con `?v=14` para evitar que el navegador use versiones viejas.
 
 ## Fase 7 aplicada — Rasgos nuevos
 
@@ -416,6 +416,11 @@ Argentina, Brasil, Uruguay, España, Francia, Inglaterra, Alemania, Italia, Port
 - **Home (Fase B)**: tarjeta de jugador en vivo (`#preview`) con nombre, posición, nacionalidad e iniciales; selector táctico con 9 botones posicionados sobre una cancha CSS (`#ps .pos-0` … `.pos-8`).
 - **Flujo de inicio**: tocar una posición la marca con `aria-pressed` y actualiza la vista previa; `#startBtn` llama a `go(selPos)`. Antes cada posición iniciaba la partida directamente.
 - **Compatibilidad**: `Mi Carrera.html` sigue intacto; los selectores y eventos del juego (`#nm`, `#nat`, `#md`, etc.) mantienen sus IDs.
+
+## Fase 11 aplicada — Cancha horizontal
+
+- Los botones de `#ps` siguen el orden de `POS` (0 a 8) pero ahora se ubican de **izquierda a derecha**: arquero en el extremo izquierdo y delantero en el derecho, con las filas alternadas para que no se pisen en pantallas chicas.
+- `.pitch::after` ya no dibuja las dos líneas verticales: ahora es un **círculo central** con un punto en el medio. En móvil se reduce a 76 px y los botones a 58 px de ancho.
 
 ## Fase 10 aplicada — Clubes que no renuevan
 
