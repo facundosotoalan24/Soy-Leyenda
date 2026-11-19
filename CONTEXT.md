@@ -111,7 +111,7 @@ Creado en `go()`.
 - `TN` / `EX` / `AM` — nombres de tier, OVR de entrada y edad máxima por tier.
 - `TT` — legado: torneos por tier; ya no se usa desde `leagues.js`.
 - `INJ` — 4 tipos de lesión con peso, penalización de OVR y duración.
-- `TR` — 5 rasgos: Crack precoz, Late bloomer, Propenso a lesiones, Líder, Disciplinado.
+- `TR` — 8 rasgos: Crack precoz, Late bloomer, Propenso a lesiones, Líder, Disciplinado, Goleador nato, Nómada, Resiliente.
 - `NT` — 20 nacionalidades distintas, con copa continental y `d2`. El selector muestra solo el nombre del país, sin el prefijo "Nacionalidad:" y sin duplicados.
 - `EV` — 8 eventos base (6 comunes + lesión grave + capitanía).
 - `EV2` — 21 eventos condicionales por edad/tier/nivel y relaciones.
@@ -397,7 +397,15 @@ Argentina, Brasil, Uruguay, España, Francia, Inglaterra, Alemania, Italia, Port
 - **Alcance**: `reach` sube a 0.65 para 79+, así un jugador de un club chico puede recibir a los gigantes.
 - **Exterior**: más probabilidad para 79+ (+18 %) y 85+ (+10 %).
 - **78 o menos**: sigue limitado a un tier de salto; recibe clubes grandes de tier 3 pero no la élite.
-- **Cache**: `index.html` carga `styles.css`, `leagues.js`, `data.js` y `game.js` con `?v=7` para evitar que el navegador use versiones viejas.
+- **Cache**: `index.html` carga `styles.css`, `leagues.js`, `data.js` y `game.js` con `?v=8` para evitar que el navegador use versiones viejas.
+
+## Fase 7 aplicada — Rasgos nuevos
+
+- **Goleador nato**: `S.gf=1.25` y `S.af=.85`; multiplica goles y asistencias en `season()`. No modifica `POS` (que es compartido por todos los jugadores).
+- **Nómada**: `S.agOff+=.06`, `S.rel.dir-=8`, `+12 %` de probabilidad de oferta exterior y `+10 %` de sueldo en `contractTerms()`.
+- **Resiliente**: `S.rs=1`; en `season()` saca la lesión más grave del pool (máximo 5 meses), reduce a la mitad la caída de OVR y suma `.2` al factor de partidos jugados.
+- **Helper `trIs(n)`**: reemplaza las comparaciones directas con `S.tr[0]`, usadas por `Líder` y los rasgos nuevos.
+- **Compatibilidad**: `continueRun()` inicializa `gf=1`, `af=1` y `rs=0` en partidas guardadas antes de este cambio.
 
 ## Publicación en GitHub Pages
 

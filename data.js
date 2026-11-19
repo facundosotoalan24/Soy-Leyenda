@@ -16,7 +16,7 @@ CL[4]=[["Real Madrid",1,"LaLiga","Copa del Rey"],["Barcelona",.95,"LaLiga","Copa
 TT[4]=[["Liga europea",.42],["Copa nacional",.25],["Champions League",.2]];
 
 const INJ=[["una distensión muscular",.7,0,"1 mes"],["un esguince de tobillo",.6,0,"2 meses"],["una fractura de peroné",.4,-1,"5 meses"],["una rotura de ligamentos cruzados",.25,-3,"9 meses"]];
-const TR=[["Crack precoz","Arrancás con más nivel, pero tu techo es más bajo."],["Late bloomer","Arrancás flojo, pero tu techo es altísimo."],["Propenso a lesiones","Las lesiones te van a perseguir."],["Líder","Los técnicos confían en vos."],["Disciplinado","Te cuidás: menos lesiones y mejor crecimiento."]];
+const TR=[["Crack precoz","Arrancás con más nivel, pero tu techo es más bajo."],["Late bloomer","Arrancás flojo, pero tu techo es altísimo."],["Propenso a lesiones","Las lesiones te van a perseguir."],["Líder","Los técnicos confían en vos."],["Disciplinado","Te cuidás: menos lesiones y mejor crecimiento."],["Goleador nato","Convertís mucho más, pero asistís menos."],["Nómada","Más ofertas del exterior y mejor sueldo, pero la dirigencia desconfía."],["Resiliente","Te recuperás antes: lesiones más leves y menos minutos perdidos."]];
 
 const AGENTS=[
 {n:"El Amigo",d:"Leal: menos ofertas, menos riesgo.",off:-.08,rel:6,bonus:0},

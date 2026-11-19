@@ -23,6 +23,7 @@ const M=n=>{
 };
 const NAT_LEAGUE={Argentina:"ARG",Brasil:"BRA",Uruguay:"ARG","España":"ESP",Francia:"FRA",Inglaterra:"ENG",Alemania:"GER",Italia:"ITA",Portugal:"POR","Países Bajos":"NED",Colombia:"ARG",Chile:"ARG",Perú:"ARG",Ecuador:"ARG",Paraguay:"ARG",México:"ESP","Estados Unidos":"ENG",Bélgica:"FRA",Croacia:"ITA","Arabia Saudita":"ARA"};
 const leagueOf=id=>LEAGUES.find(L=>L.id===id);
+const trIs=n=>!!S.tr&&S.tr[0]===n;
 
 const clubSlug=s=>String(s||"").toLowerCase().normalize("NFD")
   .replace(/[\u0300-\u036f]/g,"").replace(/&/g,"and")
@@ -177,6 +178,7 @@ function continueRun(){
   S.mile=S.mile||[];
   S.ag=S.ag||0;S.agOff=S.agOff||0;S.agB=S.agB||0;S.injured=null;S.home=S.home||null;S.ra=S.ra||0;
   S.money=S.money||0;S.free=!!S.free;S.chDone=!!S.chDone;S.pre=S.pre||null;S.preAge=S.preAge||0;
+  S.gf=S.gf||1;S.af=S.af||1;S.rs=S.rs||0;
   if(!S.lgId){
     S.lgId=NAT_LEAGUE[S.nt&&S.nt.n]||"ARG";
     S.div=S.tier>=3?1:2;
@@ -235,6 +237,9 @@ function trait(){
   else if(t[0]=="Late bloomer"){S.ovr-=3;S.pot+=6}
   else if(t[0]=="Propenso a lesiones")S.ij=.17;
   else if(t[0]=="Disciplinado"){S.ij=.05;S.gb=.5}
+  else if(t[0]=="Goleador nato"){S.gf=1.25;S.af=.85}
+  else if(t[0]=="Nómada"){S.agOff+=.06;S.rel.dir=C(S.rel.dir-8,0,100)}
+  else if(t[0]=="Resiliente")S.rs=1;
 }
 
 function sv(x){
@@ -248,7 +253,8 @@ function contractTerms(x,kind){
   const t=tierOf(x.k,x.div);
   const v=valueOf(S.ovr,S.age,S.pot,S.p&&S.p[0],t);
   const baseW=wageOf(S.ovr,S.age,S.pot,S.p&&S.p[0],t,x.k);
-  const w=kind==="low"?Math.max(1,Math.round(baseW*.92)):kind==="short"?Math.max(1,Math.round(baseW*1.05)):baseW;
+  const w0=kind==="low"?Math.max(1,Math.round(baseW*.92)):kind==="short"?Math.max(1,Math.round(baseW*1.05)):baseW;
+  const w=trIs("Nómada")?Math.round(w0*1.1):w0;
   return {w,y:kind==="short"?2:3,cl:Math.max(1,Math.round(v*(kind==="low"?1.1:kind==="short"?1.6:2)))};
 }
 function signContract(x,terms){
@@ -430,15 +436,15 @@ function season(){
   else if(S.rel.hin<25)S.mod=(S.mod||0)-.05;
   S.mod=(S.mod||0)+(pre.mod||0);
   const dtb=(S.rel.dt-50)/200;
-  const ex=EX[S.tier],s=C(.55+(S.ovr-ex+6)/25+(S.mod||0)+dtb+(S.tr&&S.tr[0]=="Líder"?.05:0),.15,1);
+  const ex=EX[S.tier],s=C(.55+(S.ovr-ex+6)/25+(S.mod||0)+dtb+(trIs("Líder")?.05:0),.15,1);
   S.mod=0;
-  const inj=rnd()<C(S.ij+(pre.inj||0),.01,.5)?INJ[I([0,0,0,1,1,2,3])]:null;
-  if(inj)S.ovr=Math.max(35,S.ovr+inj[2]);
+  const inj=rnd()<C(S.ij+(pre.inj||0),.01,.5)?INJ[I(trIs("Resiliente")?[0,0,0,1,1,2]:[0,0,0,1,1,2,3])]:null;
+  if(inj)S.ovr=Math.max(35,S.ovr+inj[2]*(trIs("Resiliente")?.5:1));
   if(inj&&inj[2]<=-1)S.injured=inj;
   if(S.ovr>=85)mile("⭐","OVR 85");
-  let pj=Math.round(38*s*R(.85,1)*(inj?inj[1]:1)*(pre.pj||1));
+  let pj=Math.round(38*s*R(.85,1)*(inj?(trIs("Resiliente")?Math.min(1,inj[1]+.2):inj[1]):1)*(pre.pj||1));
   if(a<18)pj=Math.round(pj*.6);
-  const g=Math.round(pj*S.p[1]*R(.6,1.5)*(pre.g||1)),as=Math.round(pj*S.p[2]*R(.6,1.5)*(pre.a||1));
+  const g=Math.round(pj*S.p[1]*R(.6,1.5)*(pre.g||1)*(S.gf||1)),as=Math.round(pj*S.p[2]*R(.6,1.5)*(pre.a||1)*(S.af||1));
   const gkm=S.p[0]=="Arquero",rel=S.ovr-Math.max(ex,45),gkF=pre.gk||1;
   let pen=0,mm=0,vc=0;
   if(gkm){
@@ -493,7 +499,7 @@ function season(){
   if(S.t===0&&(tr.length||ic.length))mile("🏆","Primer título");
   S.pj+=pj;S.g+=g;S.a+=as;S.cj[S.club]=(S.cj[S.club]||0)+pj;S.t+=tr.length+ic.length;
   const perf=(tr.length+ic.length)*3+(g>=15?2:0)+(S.ovr>=ex+5?2:0)-(S.ovr<ex-5?2:0)-(inj?1:0);
-  S.rel.dt=C(S.rel.dt+(perf>0?1:perf<0?-1:0)+(S.tr&&S.tr[0]=="Líder"?.5:0)+(pre.dt||0),0,100);
+  S.rel.dt=C(S.rel.dt+(perf>0?1:perf<0?-1:0)+(trIs("Líder")?.5:0)+(pre.dt||0),0,100);
   S.rel.hin=C(S.rel.hin+(tr.length?2:0)+(g>=20?1:0)-(S.ovr<ex-5?1:0)+(pre.hin||0),0,100);
   S.rel.pre=C(S.rel.pre+(aw.length?1:0)+(ic.length?1:0)+(inj?-1:0)+(pre.press||0),0,100);
   S.rel.dir=C((S.rel.dir??50)+(perf>0?1:perf<0?-1:0)+(S.pos<=3?1:0)-(S.pos>table.total-2?1:0),0,100);
@@ -639,7 +645,7 @@ function offer(){
   const c2=pick(otherDiv.filter(c=>canJoin(c)&&(c.div===1?S.ovr>=EX[tierOfClub(c)]-4-S.agB:S.ovr<ex+2)));
   add(c2);
 
-  const foreignChance=(S.div===2?.10:.28)+(S.ag===2?.07:0)+(S.ovr>=ex+4?.07:0)+(S.ovr>=79?.18:0)+(S.ovr>=85?.10:0);
+  const foreignChance=(S.div===2?.10:.28)+(S.ag===2?.07:0)+(S.ovr>=ex+4?.07:0)+(S.ovr>=79?.18:0)+(S.ovr>=85?.10:0)+(trIs("Nómada")?.12:0);
   if(rnd()<foreignChance){
     const fc=ALL_CLUBS.filter(c=>{
       if(c.lgId===S.lgId||c.n===S.club||c.div!==1)return false;
