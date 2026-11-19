@@ -397,7 +397,7 @@ Argentina, Brasil, Uruguay, España, Francia, Inglaterra, Alemania, Italia, Port
 - **Alcance**: `reach` sube a 0.65 para 79+, así un jugador de un club chico puede recibir a los gigantes.
 - **Exterior**: más probabilidad para 79+ (+18 %) y 85+ (+10 %).
 - **78 o menos**: sigue limitado a un tier de salto; recibe clubes grandes de tier 3 pero no la élite.
-- **Cache**: `index.html` carga `styles.css`, `leagues.js`, `data.js` y `game.js` con `?v=17` para evitar que el navegador use versiones viejas.
+- **Cache**: `index.html` carga `styles.css`, `leagues.js`, `data.js` y `game.js` con `?v=18` para evitar que el navegador use versiones viejas.
 
 ## Fase 7 aplicada — Rasgos nuevos
 
@@ -416,6 +416,11 @@ Argentina, Brasil, Uruguay, España, Francia, Inglaterra, Alemania, Italia, Port
 - **Home (Fase B)**: tarjeta de jugador en vivo (`#preview`) con nombre, posición, nacionalidad e iniciales; selector táctico con 11 botones posicionados sobre una cancha CSS (`#ps .pos-0` … `.pos-10`).
 - **Flujo de inicio**: tocar una posición la marca con `aria-pressed` y actualiza la vista previa; `#startBtn` llama a `go(selPos)`. Antes cada posición iniciaba la partida directamente.
 - **Compatibilidad**: `Mi Carrera.html` sigue intacto; los selectores y eventos del juego (`#nm`, `#nat`, `#md`, etc.) mantienen sus IDs.
+
+## Fase 13 aplicada — Pelota en el título
+
+- El `h1` del inicio se dividió en `.title-ball` (⚽) y `.title-text` («Soy Leyenda»). Antes el degradado verde con `background-clip:text` teñía también el emoji y lo dejaba parecer un círculo verde; ahora el degradado sólo afecta al texto y la pelota se dibuja con sus colores normales.
+- El emoji va en un `span` con `aria-hidden="true"` para que los lectores de pantalla lean sólo «Soy Leyenda».
 
 ## Fase 12 aplicada — Más goles y OVR ligado al rendimiento
 
