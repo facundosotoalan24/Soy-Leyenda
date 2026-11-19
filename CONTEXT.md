@@ -399,6 +399,14 @@ Argentina, Brasil, Uruguay, España, Francia, Inglaterra, Alemania, Italia, Port
 - **78 o menos**: sigue limitado a un tier de salto; recibe clubes grandes de tier 3 pero no la élite.
 - **Cache**: `index.html` carga `styles.css`, `leagues.js`, `data.js` y `game.js` con `?v=7` para evitar que el navegador use versiones viejas.
 
+## Publicación en GitHub Pages
+
+- **Repositorio**: `https://github.com/facundosotoalan24/Soy-Leyenda` (público, rama `main`).
+- **Web**: `https://facundosotoalan24.github.io/Soy-Leyenda/`.
+- **Origen de Pages**: rama `main`, carpeta `/`, `build_type: legacy`, HTTPS forzado.
+- **Rutas**: todas las referencias a `assets/` y scripts son relativas, así que funcionan tanto en `file://` como bajo el subdirectorio `/Soy-Leyenda/`.
+- **Cada push a `main`** dispara un rebuild automático de GitHub Pages (aprox. 1 minuto).
+
 ## Deuda técnica pendiente
 
 1. **Nombres descriptivos** — `game.js` sigue usando `S`, `R`, `I`, `C`, `M`, `sv`, `oc`, `fm`. Renombrar reduce el costo de razonamiento de la IA (aunque agrande el archivo ~10 %).
