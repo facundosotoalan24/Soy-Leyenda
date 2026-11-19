@@ -397,7 +397,7 @@ Argentina, Brasil, Uruguay, España, Francia, Inglaterra, Alemania, Italia, Port
 - **Alcance**: `reach` sube a 0.65 para 79+, así un jugador de un club chico puede recibir a los gigantes.
 - **Exterior**: más probabilidad para 79+ (+18 %) y 85+ (+10 %).
 - **78 o menos**: sigue limitado a un tier de salto; recibe clubes grandes de tier 3 pero no la élite.
-- **Cache**: `index.html` carga `styles.css`, `leagues.js`, `data.js` y `game.js` con `?v=10` para evitar que el navegador use versiones viejas.
+- **Cache**: `index.html` carga `styles.css`, `leagues.js`, `data.js` y `game.js` con `?v=11` para evitar que el navegador use versiones viejas.
 
 ## Fase 7 aplicada — Rasgos nuevos
 
@@ -416,6 +416,32 @@ Argentina, Brasil, Uruguay, España, Francia, Inglaterra, Alemania, Italia, Port
 - **Home (Fase B)**: tarjeta de jugador en vivo (`#preview`) con nombre, posición, nacionalidad e iniciales; selector táctico con 9 botones posicionados sobre una cancha CSS (`#ps .pos-0` … `.pos-8`).
 - **Flujo de inicio**: tocar una posición la marca con `aria-pressed` y actualiza la vista previa; `#startBtn` llama a `go(selPos)`. Antes cada posición iniciaba la partida directamente.
 - **Compatibilidad**: `Mi Carrera.html` sigue intacto; los selectores y eventos del juego (`#nm`, `#nat`, `#md`, etc.) mantienen sus IDs.
+
+## Fase 9 aplicada — Fase C y rebalance ofensivo
+
+### Mercado de pases (Fase C)
+
+- `panel()` detecta ofertas cuando alguna opción tiene `club` y `tier`; en ese caso agrega la clase `.dec.market`, el rótulo "MERCADO DE PASES" y convierte cada opción en una tarjeta `.off-card`.
+- Cada tarjeta muestra: escudo real, nombre del club, pastilla de tier (`TN[tier]`), descripción sin el sueldo repetido, sueldo resaltado en verde (`.off-wage`) y una llamada a la acción (`.off-cta`).
+- El sueldo se toma del `€…K/sem` dentro de `x.s` o del campo `w`, que ahora incluyen `mk()`, la renovación, la oferta saudí y las ofertas iniciales de `go()`.
+- La opción de retiro se mantiene como tarjeta `.retire` en rojo para no romper el flujo.
+- Las opciones que no son ofertas (eventos, pretemporada, lesiones, negociación, desafíos) siguen con el botón de texto de siempre.
+
+### Vitrina de trofeos (Fase C)
+
+- `trophyVitrine()` reemplaza la lista plana de `#pm` por una cuadrícula `.trophy-grid` con tarjetas por trofeo, imagen real cuando existe y glow distinto para liga (oro), selección (verde) y premio individual (violeta).
+- Cada entrada nueva de `S.pal` guarda `[nombre, icono, tier, edad, club]`; las partidas antiguas siguen funcionando porque los campos 4 y 5 son opcionales.
+- Al tocar o enfocar una tarjeta (click, Enter o Espacio) se actualiza `#trophyInfo` con cantidad, edades y club. `title` muestra lo mismo al pasar el mouse.
+
+### Goles y asistencias por posición
+
+- Nuevas tasas por partido en `POS` (`[nombre, goles, asistencias, icono]`):
+  - Central `.03 / .015`, laterales `.02 / .09`, Pivote `.04 / .12`.
+  - **Mediocampista `.12 / .22`**, **Enganche `.23 / .36`**, Extremo `.2 / .18`, Delantero `.45 / .12`.
+- `season()` aplica además un factor de nivel `off = clamp(.9 + (OVR-65)/70, .8, 1.4)` a goles y asistencias, tanto de club como de selección. Un enganche elite deja de tener números de defensor.
+- Referencia con OVR 88–94 y ~830 PJ: lateral 76 asistencias/600, mediocampista 192/600, enganche 312/600 (antes el mediocampista estaba en ~65/600).
+- `continueRun()` migra partidas guardadas: si `S.p` es un array viejo, se reemplaza por el objeto de `POS` correspondiente para que usen las tasas nuevas.
+- Las acciones de pretemporada de goles/asistencias y el rasgo *Goleador nato* se aplican después sobre estas tasas.
 
 ## Identidad
 

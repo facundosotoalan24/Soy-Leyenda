@@ -1,6 +1,8 @@
 /* ===== DATOS DEL JUEGO ===== */
 
-const POS=[["Arquero",0,.004,"🧤"],["Central",.03,.01,"🛡️"],["Lateral izquierdo",.02,.08,"◀️"],["Lateral derecho",.02,.08,"▶️"],["Pivote",.03,.05,"⚙️"],["Mediocampista",.07,.1,"🎯"],["Enganche",.15,.2,"🎩"],["Extremo",.2,.15,"⚡"],["Delantero",.45,.08,"🔥"]];
+/* Tasas por partido: [nombre, goles, asistencias, icono].
+   El mediocampo y el enganche deben diferenciarse claramente de la defensa. */
+const POS=[["Arquero",0,.004,"🧤"],["Central",.03,.015,"🛡️"],["Lateral izquierdo",.02,.09,"◀️"],["Lateral derecho",.02,.09,"▶️"],["Pivote",.04,.12,"⚙️"],["Mediocampista",.12,.22,"🎯"],["Enganche",.23,.36,"🎩"],["Extremo",.2,.18,"⚡"],["Delantero",.45,.12,"🔥"]];
 
 const CL=[[["Brown de Adrogué",.4],["Atlanta",.4],["Nueva Chicago",.45],["Almirante Brown",.35],["Ferro",.4]],[["Platense",.4],["Argentinos",.5],["Lanús",.55],["Huracán",.5],["Talleres",.6]],[["Independiente",.65],["Racing",.7],["San Lorenzo",.6],["Boca",.85],["River",.9]],[["Benfica",.8],["Ajax",.75],["Sevilla",.6],["Atlético de Madrid",.7],["Inter",.8]],[["Real Madrid",1],["Barcelona",.9],["Man. City",1],["Bayern",.95]]];
 const CA=[["Al-Hilal",1],["Al-Nassr",.8],["Al-Ittihad",.7]];

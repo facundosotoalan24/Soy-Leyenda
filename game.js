@@ -179,6 +179,9 @@ function continueRun(){
   S.ag=S.ag||0;S.agOff=S.agOff||0;S.agB=S.agB||0;S.injured=null;S.home=S.home||null;S.ra=S.ra||0;
   S.money=S.money||0;S.free=!!S.free;S.chDone=!!S.chDone;S.pre=S.pre||null;S.preAge=S.preAge||0;
   S.gf=S.gf||1;S.af=S.af||1;S.rs=S.rs||0;
+  // Las partidas viejas guardaron POS como array; actualizar a las tasas nuevas.
+  const posName=Array.isArray(S.p)?S.p[0]:S.p;
+  S.p=POS.find(p=>p[0]===posName)||POS[8];
   if(!S.lgId){
     S.lgId=NAT_LEAGUE[S.nt&&S.nt.n]||"ARG";
     S.div=S.tier>=3?1:2;
@@ -315,7 +318,7 @@ function go(i){
   const local=ALL_CLUBS.filter(c=>c.lgId===S.lgId),d2=local.filter(c=>c.div===2),d1=local.filter(c=>c.div===1);
   const pick=(pool,maxK)=>{const p=pool.filter(c=>c.k<=maxK);return I(p.length?p:pool)};
   const seen=new Set(),o=[];
-  const add=c=>{if(!c||seen.has(c.n))return;seen.add(c.n);o.push({l:c.n,s:(c.div===2?L0.d2:L0.d1)+" · "+(c.div===2?"más minutos, ideal para crecer":"competencia exigente"),tier:c.tier,club:c.n,k:c.k,lgId:c.lgId,div:c.div,lg:c.lg,cp:c.cp,tl:[]})};
+  const add=c=>{if(!c||seen.has(c.n))return;seen.add(c.n);o.push({l:c.n,s:(c.div===2?L0.d2:L0.d1)+" · "+(c.div===2?"más minutos, ideal para crecer":"competencia exigente"),w:wageOf(S.ovr,S.age,S.pot,S.p&&S.p[0],c.tier,c.k),tier:c.tier,club:c.n,k:c.k,lgId:c.lgId,div:c.div,lg:c.lg,cp:c.cp,tl:[]})};
   add(pick(d2,.52));add(pick(d2,.58));add(pick(d2,.65));add(pick(d1,.62));
   let tries=0;
   while(o.length<4&&local.length&&tries++<50)add(I(local));
@@ -444,7 +447,9 @@ function season(){
   if(S.ovr>=85)mile("⭐","OVR 85");
   let pj=Math.round(38*s*R(.85,1)*(inj?(trIs("Resiliente")?Math.min(1,inj[1]+.2):inj[1]):1)*(pre.pj||1));
   if(a<18)pj=Math.round(pj*.6);
-  const g=Math.round(pj*S.p[1]*R(.6,1.5)*(pre.g||1)*(S.gf||1)),as=Math.round(pj*S.p[2]*R(.6,1.5)*(pre.a||1)*(S.af||1));
+  // El nivel también pesa: un enganche elite genera muchas más ocasiones que uno de plantel.
+  const off=C(.9+(S.ovr-65)/70,.8,1.4);
+  const g=Math.round(pj*S.p[1]*R(.6,1.5)*(pre.g||1)*(S.gf||1)*off),as=Math.round(pj*S.p[2]*R(.6,1.5)*(pre.a||1)*(S.af||1)*off);
   const gkm=S.p[0]=="Arquero",rel=S.ovr-Math.max(ex,45),gkF=pre.gk||1;
   let pen=0,mm=0,vc=0;
   if(gkm){
@@ -475,12 +480,12 @@ function season(){
   const ps=C((S.ovr-68)/18,0,.9)+(S.caps?.12:0);
   if(a>=19&&rnd()<ps){
     c=Math.round(R(3,10));S.caps+=c;
-    S.cg+=Math.round(c*S.p[1]*R(.6,1.4));
-    S.ca+=Math.round(c*S.p[2]*R(.6,1.4));
+    S.cg+=Math.round(c*S.p[1]*R(.6,1.4)*off);
+    S.ca+=Math.round(c*S.p[2]*R(.6,1.4)*off);
     if(a%4==2){
       const st=["la fase de grupos","los octavos","los cuartos","la semifinal","la final"],pw=C(.52+(S.ovr-70)/50+S.nt.b,.4,.85);
       let k=0;while(k<5&&rnd()<pw)k++;
-      const m=3+Math.min(k,4),wg=Math.round(m*S.p[1]*R(.6,1.5)),wa=Math.round(m*S.p[2]*R(.6,1.5));
+      const m=3+Math.min(k,4),wg=Math.round(m*S.p[1]*R(.6,1.5)*off),wa=Math.round(m*S.p[2]*R(.6,1.5)*off);
       S.caps+=m;S.cg+=wg;S.ca+=wa;
       wcn=k==5?"🌎 Mundial: ¡campeones del mundo! "+wg+" goles y "+wa+" asistencias en "+m+" partidos.":"🌎 Mundial: eliminados en "+st[k]+" ("+m+" partidos, "+wg+" G, "+wa+" A).";
       if(k==5){ic.push("Mundial");mile("🌍","Mundial")}
@@ -493,9 +498,9 @@ function season(){
     if(S.ovr>=ex+7&&rnd()<.15+(S.rel.pre-50)/500)aw.push("Mejor jugador del torneo");
     if(S.ovr>=89&&S.tier>=3&&rnd()<.3)aw.push("Balón de Oro");
   }
-  tr.forEach(n=>S.pal.push([n,"🏆",S.tier]));
-  ic.forEach(n=>S.pal.push([n,"🌎",S.tier]));
-  aw.forEach(n=>S.pal.push([n,"⭐",S.tier]));
+  tr.forEach(n=>S.pal.push([n,"🏆",S.tier,a,S.club]));
+  ic.forEach(n=>S.pal.push([n,"🌎",S.tier,a,S.club]));
+  aw.forEach(n=>S.pal.push([n,"⭐",S.tier,a,S.club]));
   if(S.t===0&&(tr.length||ic.length))mile("🏆","Primer título");
   S.pj+=pj;S.g+=g;S.a+=as;S.cj[S.club]=(S.cj[S.club]||0)+pj;S.t+=tr.length+ic.length;
   const perf=(tr.length+ic.length)*3+(g>=15?2:0)+(S.ovr>=ex+5?2:0)-(S.ovr<ex-5?2:0)-(inj?1:0);
@@ -553,13 +558,32 @@ function note(t,ic){
 
 function panel(txt,opts,fn){
   const d=$("#dc");
-  d.innerHTML='<div class="dec"><h3>Tenés '+S.age+' años</h3><p class="s">'+txt+'</p></div>';
+  const market=opts.some(x=>x.club&&x.tier!==undefined&&!x.r);
+  d.innerHTML='<div class="dec'+(market?" market":"")+'">'+
+    (market?'<span class="dec-eyebrow">MERCADO DE PASES</span>':"")+
+    '<h3>Tenés '+S.age+' años</h3><p class="s">'+txt+'</p></div>';
   opts.forEach(x=>{
     const b=document.createElement("button");
     b.type="button";
+    const card=market&&(x.club||x.r);
+    if(card)b.className="off-card"+(x.r?" retire":"");
     const tx=document.createElement("span");
     tx.className="off-txt";
-    tx.innerHTML=x.l+(x.s?"<small>"+x.s+"</small>":"");
+    if(card&&x.club){
+      const head=document.createElement("span");head.className="off-head";
+      const nm=document.createElement("b");nm.textContent=x.club;head.appendChild(nm);
+      if(TN[x.tier]!==undefined){const tp=document.createElement("span");tp.className="tier-pill t"+x.tier;tp.textContent=TN[x.tier];head.appendChild(tp)}
+      const raw=x.s||"",wm=raw.match(/€[\d.,]+K\/sem/);
+      const s=document.createElement("small");s.className="off-desc";
+      s.textContent=wm?raw.replace(wm[0],"").replace(/\s*·\s*$/,""):raw;
+      const wage=document.createElement("span");wage.className="off-wage";
+      wage.textContent=wm?wm[0]:(x.w?"€"+x.w+"K/sem":x.loan?"Préstamo":"");
+      const cta=document.createElement("span");cta.className="off-cta";
+      cta.textContent=(x.l===x.club?"Elegir club":x.l||"Elegir")+" →";
+      tx.append(head,s,wage,cta);
+    }else{
+      tx.innerHTML=x.l+(x.s?"<small>"+x.s+"</small>":"");
+    }
     b.appendChild(tx);
     if(x.club&&hasCrest(x.lgId,x.club)){
       const im=document.createElement("img");
@@ -618,11 +642,14 @@ function offer(){
     const w=wageOf(S.ovr,S.age,S.pot,S.p&&S.p[0],tierOfClub(c),c.k);
     return lgName+" · "+parts.join(" · ")+" · €"+w+"K/sem";
   };
-  const mk=(c,tierOverride)=>({l:"Fichar por "+c.n,s:desc(c),tier:tierOverride??tierOfClub(c),club:c.n,k:c.k,lgId:c.lgId,div:c.div,lg:c.lg,cp:c.cp,tl:[]});
+  const mk=(c,tierOverride)=>{
+    const t=tierOverride??tierOfClub(c);
+    return {l:"Fichar por "+c.n,s:desc(c),w:wageOf(S.ovr,S.age,S.pot,S.p&&S.p[0],t,c.k),tier:t,club:c.n,k:c.k,lgId:c.lgId,div:c.div,lg:c.lg,cp:c.cp,tl:[]};
+  };
   const o=[];
   const expiring=!!(S.ctr&&!S.free&&S.ctr.y<=1);
   const canRenew=S.ovr>=ex-8&&(expiring||(S.free?(S.rel.dir??50)>=45:(S.rel.dt>=25||(S.rel.dir??50)>=60)));
-  if(canRenew)o.push({l:(S.free?"Volver a ":"Renovar en ")+S.club,s:(S.free?"Agente libre · ":"")+S.lg+(S.free?"":" · "+contractLine()),tier:T,club:S.club,k:S.k,lgId:S.lgId,div:S.div,lg:S.lg,cp:S.cp,tl:S.tl,renew:1});
+  if(canRenew)o.push({l:(S.free?"Volver a ":"Renovar en ")+S.club,s:(S.free?"Agente libre · ":"")+S.lg+(S.free?"":" · "+contractLine()),w:S.ctr?S.ctr.w:wageOf(S.ovr,S.age,S.pot,S.p&&S.p[0],T,S.k),tier:T,club:S.club,k:S.k,lgId:S.lgId,div:S.div,lg:S.lg,cp:S.cp,tl:S.tl,renew:1});
 
   const sameCountry=ALL_CLUBS.filter(c=>c.lgId===S.lgId&&c.n!==S.club);
   const sameDiv=sameCountry.filter(c=>c.div===S.div);
@@ -669,7 +696,7 @@ function offer(){
   if(S.age>=29&&S.ovr>=60&&S.lgId!=="ARA"){
     const sa=ALL_CLUBS.filter(c=>c.lgId==="ARA"&&c.div===1&&c.n!==S.club&&c.k<=.74);
     const ca=sa.length?I(sa):ALL_CLUBS.find(c=>c.lgId==="ARA"&&c.div===1);
-    if(ca&&!has(ca.n))o.push({l:"Irte a "+ca.n,s:"Saudi Pro League · contrato millonario",tier:tierOf(ca.k,ca.div),club:ca.n,k:ca.k,lgId:ca.lgId,div:ca.div,lg:ca.lg,cp:ca.cp,tl:[]});
+    if(ca&&!has(ca.n)){const ct=tierOf(ca.k,ca.div);o.push({l:"Irte a "+ca.n,s:"Saudi Pro League · contrato millonario",w:wageOf(S.ovr,S.age,S.pot,S.p&&S.p[0],ct,ca.k),tier:ct,club:ca.n,k:ca.k,lgId:ca.lgId,div:ca.div,lg:ca.lg,cp:ca.cp,tl:[]})}
   }
 
   if(!S.free&&S.age<=23&&T>=2&&S.ovr<ex+2&&!S.home){
@@ -773,16 +800,48 @@ function fin(){
   const b=(v,l)=>`<div><b>${v}</b><span>${l}</span></div>`;
   const money=b(S.money?fm(S.money):"€0","Patrimonio")+b(S.ctr?("€"+S.ctr.w+"K"):"—","Sueldo/sem");
   $("#sm").innerHTML=(S.p[0]=="Arquero"?b(S.pj,"PJ")+b(S.gk.p,"🧤 Penales atajados")+b(S.gk.m,"🤜🤛 Mano a mano ganados")+b(S.gk.v,"🥅 Vallas a 0")+b(S.t,"Títulos")+b(S.caps,"PJ Selección")+b(fm(S.pv),"Valor máx.")+b(S.peak,"OVR pico"):b(S.pj,"PJ")+b(S.g,"Goles")+b(S.a,"Asist.")+b(S.t,"Títulos")+b(S.caps,"PJ Selección")+b(S.cg,"Goles Sel.")+b(S.ca,"Asist. Sel.")+b(fm(S.pv),"Valor máx."))+money;
-  const P={};
-  S.pal.forEach(x=>{P[x[0]]=P[x[0]]||{n:0,i:x[1]};P[x[0]].n++});
-  const o={"🏆":0,"🌎":1,"⭐":2};
-  $("#pm").innerHTML="<h3>Palmarés</h3>"+(Object.entries(P).sort((a,b)=>o[a[1].i]-o[b[1].i]).map(([k,v])=>{
-    const src=trophySrc(k);
-    return `<div>${src?`<img class="trf" src="${src}" alt="" onerror="this.remove()">`:v.i} ${k}${v.n>1?" ×"+v.n:""}</div>`;
-  }).join("")||"<div>Sin títulos</div>");
+  trophyVitrine();
   if(S.t)pop();
   extras();
   drawCard();
+}
+
+function trophyVitrine(){
+  const P={};
+  S.pal.forEach(x=>{
+    const k=x[0];P[k]=P[k]||{n:0,i:x[1],tier:x[2],ages:[],clubs:[]};
+    P[k].n++;
+    if(x[3]!=null)P[k].ages.push(x[3]);
+    if(x[4])P[k].clubs.push(x[4]);
+  });
+  const order={"🏆":0,"🌎":1,"⭐":2};
+  const list=Object.entries(P).sort((a,b)=>order[a[1].i]-order[b[1].i]||b[1].n-a[1].n);
+  const box=$("#pm");box.innerHTML="";
+  const head=document.createElement("div");head.className="pm-head";
+  const h=document.createElement("h3");h.textContent="Vitrina de trofeos";
+  const total=document.createElement("span");total.textContent=S.t+" en total";
+  head.append(h,total);box.appendChild(head);
+  const grid=document.createElement("div");grid.className="trophy-grid";
+  if(!list.length){const p=document.createElement("p");p.className="s";p.textContent="Sin títulos todavía.";grid.appendChild(p)}
+  list.forEach(([k,v])=>{
+    const c=document.createElement("div");
+    c.className="trophy "+(v.i==="🌎"?"world":v.i==="⭐"?"award":"league");
+    c.tabIndex=0;c.setAttribute("role","button");
+    const ages=[...new Set(v.ages)].join(", "),clubs=[...new Set(v.clubs)].slice(0,2).join(", ");
+    c.dataset.info=k+" · "+v.n+" "+(v.n===1?"vez":"veces")+(ages?" · a los "+ages+" años":"")+(clubs?" · "+clubs:"")+(v.tier!==undefined?" · "+TN[v.tier]:"");
+    c.title=c.dataset.info;
+    const src=trophySrc(k);
+    const addIcon=()=>{const ic=document.createElement("span");ic.className="trophy-ic";ic.textContent=v.i;c.prepend(ic)};
+    if(src){const im=document.createElement("img");im.src=src;im.alt="";im.onerror=()=>{im.remove();addIcon()};c.appendChild(im)}
+    else addIcon();
+    const b=document.createElement("b");b.textContent=k;c.appendChild(b);
+    const s=document.createElement("small");s.textContent="×"+v.n;c.appendChild(s);
+    grid.appendChild(c);
+  });
+  box.appendChild(grid);
+  const info=document.createElement("div");info.className="trophy-info";info.id="trophyInfo";
+  info.textContent="Tocá un trofeo para ver cuándo lo ganaste.";
+  box.appendChild(info);
 }
 
 async function drawCard(){
@@ -993,6 +1052,9 @@ $("#crd").onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();open
 $("#zoomClose").onclick=()=>{$("#zoom").hidden=true};
 $("#zoom").onclick=e=>{if(e.target.id==="zoom")$("#zoom").hidden=true};
 document.addEventListener("keydown",e=>{if(e.key==="Escape")$("#zoom").hidden=true});
+const showTrophy=e=>{const t=e.target.closest(".trophy");const i=$("#trophyInfo");if(t&&i)i.textContent=t.dataset.info};
+$("#pm").addEventListener("click",showTrophy);
+$("#pm").addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();showTrophy(e)}});
 $("#runBtn").onclick=continueRun;
 $("#rp").onclick=()=>{try{localStorage.removeItem("mc_run")}catch(e){};show("st");hist();checkRun()};
 $("#sh").onclick=async()=>{
