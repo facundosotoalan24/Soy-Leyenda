@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=18">
+<link rel="stylesheet" href="styles.css?v=19">
 </head>
 <body>
 <div class="w">
@@ -65,6 +65,7 @@
         <option value="light">Tema: claro</option>
         <option value="dark">Tema: oscuro</option>
       </select>
+      <button class="help-btn" id="helpBtn" type="button" aria-label="Cómo jugar: ver explicación de todas las funciones">❓ Cómo jugar</button>
     </div>
 
     <div class="pitch-box">
@@ -133,6 +134,99 @@
     <button id="zoomClose" type="button" aria-label="Cerrar vista ampliada">✕ Cerrar</button>
   </div>
 
+  <div id="help" hidden role="dialog" aria-modal="true" aria-labelledby="helpTitle" aria-describedby="helpBody">
+    <div class="help-card">
+      <div class="help-head">
+        <h2 id="helpTitle">📖 Cómo jugar Soy Leyenda</h2>
+        <button id="helpClose" type="button" aria-label="Cerrar ayuda">✕</button>
+      </div>
+      <div class="help-body" id="helpBody">
+        <p class="help-lead">Elegí a tu jugador, fichá por clubes reales y viví temporadas desde los 16 años hasta el retiro. Todo se juega con decisiones: cada elección cambia tu carrera.</p>
+
+        <section class="help-sec">
+          <h3>1. Crear a tu jugador</h3>
+          <ul>
+            <li><b>Nombre</b>: el nombre que aparecerá en la tarjeta y en el historial.</li>
+            <li><b>Posición</b>: tocá un puesto en la cancha. Las siglas son POR (arquero), DFC (defensor central), LI/LD (laterales), MCD (pivote), MC (volante central), MCO (enganche), EI/ED (extremos) y DC (delantero). Tu posición define cuántos goles y asistencias generás.</li>
+            <li><b>Frecuencia de decisiones</b>: cada temporada o cada 2 temporadas se te presentarán las decisiones importantes.</li>
+            <li><b>Velocidad de simulación</b>: normal, rápida o instantánea. Podés cambiarla desde el inicio.</li>
+            <li><b>Modo de juego</b>: libre (elegí todo) o desafío de club (ganar Libertadores, Champions, Mundial, OVR 85, retirarte en tu club formador o 500 partidos).</li>
+            <li><b>Representante</b>: El Amigo, El Mercenario o El Influyente. Cada uno cambia tu relación con el DT, el sueldo y la probabilidad de que lleguen ofertas.</li>
+            <li><b>Nacionalidad</b>: define tu país de inicio y la selección que podés integrar.</li>
+            <li><b>Meta de carrera</b>: opcional; te da un objetivo y un final distinto al retirarte.</li>
+            <li><b>Código de semilla</b>: escribí una palabra para repetir siempre la misma carrera (mismos ofrecimientos y eventos). Si lo dejás vacío, se genera uno nuevo.</li>
+            <li><b>Tema</b>: automático (según tu sistema), claro u oscuro. También podés cambiarlo durante la partida con el botón 🌓.</li>
+          </ul>
+        </section>
+
+        <section class="help-sec">
+          <h3>2. Empezar o continuar</h3>
+          <ul>
+            <li><b>⚽ Empezar carrera</b> inicia una nueva con los datos elegidos.</li>
+            <li><b>▶️ Continuar carrera</b> aparece si guardaste una partida; retomá exactamente donde la dejaste.</li>
+            <li><b>🏆 Salón de la Fama</b> muestra tus mejores carreras guardadas en este dispositivo, con filtros por puntos, goles, títulos u OVR pico.</li>
+            <li>El juego guarda automáticamente en el navegador: no hace falta guardar a mano.</li>
+          </ul>
+        </section>
+
+        <section class="help-sec">
+          <h3>3. La pantalla de juego</h3>
+          <ul>
+            <li><b>Escudo y nombre del club</b>: tu equipo actual; arrancás en ascenso y podés llegar a la élite.</li>
+            <li><b>OVR</b>: tu nivel (35–94). Sube con la edad y con tu rendimiento: meter goles acelera el crecimiento. El color cambia según tu categoría.</li>
+            <li><b>Valor de mercado</b>: precio estimado según OVR, edad, potencial, posición y categoría del club.</li>
+            <li><b>Relaciones</b>: DT, hinchada, prensa y dirigencia (0–100). Influyen en los minutos, las ofertas, la renovación y las decisiones.</li>
+            <li><b>Contrato</b>: sueldo semanal, años restantes y cláusula de rescisión. Si se vence quedás libre.</li>
+            <li><b>Fila de temporadas</b>: edad, club, OVR, partidos, goles y asistencias de cada año. Se resaltan las temporadas con títulos.</li>
+            <li><b>Hitos</b>: las insignias que vas ganando (debut, OVR 85, 500 partidos, etc.).</li>
+            <li><b>🔊 / 🌓</b>: silenciar el sonido y cambiar el tema.</li>
+          </ul>
+        </section>
+
+        <section class="help-sec">
+          <h3>4. Temporadas, pretemporada y decisiones</h3>
+          <ul>
+            <li>Cada temporada se simula automáticamente: se definen tus partidos, goles, asistencias, títulos, lesiones y selección.</li>
+            <li>Antes de cada temporada elegís una <b>pretemporada</b>: mejorar el crecimiento, jugar más partidos, ganar confianza, evitar lesiones, etc.</li>
+            <li>Según la frecuencia elegida, aparecen <b>decisiones</b> con 2 o 3 opciones: elegí la que mejor convenga a tu carrera.</li>
+            <li>Las lesiones pueden restarte OVR y partidos; el rasgo <b>Resiliente</b> y una buena pretemporada las reducen.</li>
+            <li>Tu <b>rasgo</b> (Goleador nato, Nómada, Resiliente, Líder, Disciplinado, etc.) modifica goles, sueldos, minutos o crecimiento.</li>
+          </ul>
+        </section>
+
+        <section class="help-sec">
+          <h3>5. Ofertas, fichajes y contratos</h3>
+          <ul>
+            <li>Las <b>ofertas</b> llegan por tu nivel, edad y rendimiento. Priorizan clubes de tu mismo país y división; los saltos grandes son más difíciles.</li>
+            <li>Cada oferta muestra <b>club, categoría, sueldo, años y cláusula</b>. Aceptá la que quieras o seguí en tu equipo.</li>
+            <li>La <b>negociación</b> depende de tu relación con el DT y la dirigencia y del representante: podés pedir más sueldo o mejores condiciones.</li>
+            <li>Si un club no te renueva, deja de ofrecerte contrato. Si se te vence el contrato, pasás a ser <b>agente libre</b> y podés firmar sin costo.</li>
+            <li>También pueden aparecer <b>préstamos</b> para ganar minutos en otra división.</li>
+          </ul>
+        </section>
+
+        <section class="help-sec">
+          <h3>6. Copas, selección y hitos</h3>
+          <ul>
+            <li>Jugás la <b>liga</b> de tu club, la <b>copa nacional</b> y, si clasificás, la <b>copa continental</b> según la confederación del club: Champions/Europa/Conference en Europa, Libertadores/Sudamericana en Sudamérica, y las copas de Asia, África, Oceanía, Concacaf y Arabia.</li>
+            <li>La <b>selección</b> te convoca según tu OVR y país: podés jugar amistosos, copas continentales y el Mundial.</li>
+            <li>Los <b>hitos</b> y <b>títulos</b> suman a tu puntaje final y aparecen en la tarjeta y el Salón de la Fama.</li>
+          </ul>
+        </section>
+
+        <section class="help-sec">
+          <h3>7. Tu tarjeta y el final</h3>
+          <ul>
+            <li>Al terminar la carrera se calcula tu <b>puntaje</b> y podés ver y descargar una <b>tarjeta PNG</b> con club, escudos, trofeos, estadísticas y semilla. Tocá la tarjeta para ampliarla.</li>
+            <li><b>Volver a jugar</b> borra la partida guardada y te lleva al inicio; tu historial del Salón se conserva.</li>
+            <li>La carrera termina por retiro (a partir de los 34 años, según OVR y decisión) o al llegar a los 40.</li>
+          </ul>
+        </section>
+      </div>
+      <button class="pr help-ok" id="helpOk" type="button">Entendido</button>
+    </div>
+  </div>
+
   <div id="hf" hidden>
     <h1>🏆 Salón</h1>
     <p class="s">Tus mejores carreras guardadas en este dispositivo.</p>
@@ -148,8 +242,8 @@
   </div>
 </div>
 <div id="cf" aria-hidden="true"></div>
-<script src="leagues.js?v=18"></script>
-<script src="data.js?v=18"></script>
-<script src="game.js?v=18"></script>
+<script src="leagues.js?v=19"></script>
+<script src="data.js?v=19"></script>
+<script src="game.js?v=19"></script>
 </body>
 </html>

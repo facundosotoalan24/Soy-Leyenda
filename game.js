@@ -1071,7 +1071,21 @@ $("#crd").onclick=openCard;
 $("#crd").onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();openCard()}};
 $("#zoomClose").onclick=()=>{$("#zoom").hidden=true};
 $("#zoom").onclick=e=>{if(e.target.id==="zoom")$("#zoom").hidden=true};
-document.addEventListener("keydown",e=>{if(e.key==="Escape")$("#zoom").hidden=true});
+const helpBox=$("#help");
+const closeHelp=()=>{helpBox.hidden=true;document.body.classList.remove("help-open");$("#helpBtn").focus()};
+const openHelp=()=>{helpBox.hidden=false;document.body.classList.add("help-open");$("#helpBody").scrollTop=0;$("#helpClose").focus()};
+$("#helpBtn").onclick=openHelp;
+$("#helpClose").onclick=closeHelp;
+$("#helpOk").onclick=closeHelp;
+helpBox.onclick=e=>{if(e.target===helpBox)closeHelp()};
+document.addEventListener("keydown",e=>{
+  if(e.key==="Escape"){$("#zoom").hidden=true;if(!helpBox.hidden)closeHelp()}
+  if(e.key==="Tab"&&!helpBox.hidden){
+    const f=[$("#helpClose"),$("#helpOk")],i=f.indexOf(document.activeElement);
+    if(e.shiftKey){if(i<=0){e.preventDefault();f[1].focus()}}
+    else{e.preventDefault();(i<=0?f[1]:f[0]).focus()}
+  }
+});
 const showTrophy=e=>{const t=e.target.closest(".trophy");const i=$("#trophyInfo");if(t&&i)i.textContent=t.dataset.info};
 $("#pm").addEventListener("click",showTrophy);
 $("#pm").addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();showTrophy(e)}});
